@@ -1,0 +1,14 @@
+enable: true
+slot: 15
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: SUGAR_CANE
+  displayname: '&a&lFarming Shop'
+  name: '          &0&lꜰᴀʀᴍɪɴɢѕʜᴏᴘ'

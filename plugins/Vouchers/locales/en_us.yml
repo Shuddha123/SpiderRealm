@@ -1,0 +1,79 @@
+conditionals:
+  'false': '&CFalse'
+  'true': '&aTrue'
+  closed: '&cClosed'
+  disabled: '&cDisabled'
+  enabled: '&aEnabled'
+  open: '&aOpen'
+gui:
+  confirm:
+    title: '&bVouchers &8> &7Confirm Action'
+    items:
+      'no':
+        lore: '&b&lClick &8» &7To cancel action'
+        name: '&c&lCancel'
+      'yes':
+        lore: '&b&lClick &8» &7To confirm action'
+        name: '&a&lconfirm'
+  shared buttons:
+    back button:
+      lore: '&e&l%left_click% &7to go back'
+      name: <GRADIENT:65B1B4>&LGo Back</GRADIENT:2B6F8A>
+    previous button:
+      lore: '&e&l%left_click% &7to go back a page'
+      name: <GRADIENT:65B1B4>&lPrevious Page</GRADIENT:2B6F8A>
+    next button:
+      lore: '&e&l%left_click% &7to go to next page'
+      name: <GRADIENT:65B1B4>&lNext Page</GRADIENT:2B6F8A>
+    exit button:
+      lore: '&e&l%left_click% &7to exit menu'
+      name: <GRADIENT:65B1B4>&LExit</GRADIENT:2B6F8A>
+  select reward:
+    title: '&bVouchers &8> &7Select Reward'
+    items:
+      item:
+        lore:
+          - '&7Chance&F: &b%reward_chance%'
+          - ''
+          - '&b&lClick &8» &7To select this reward'
+      command:
+        lore:
+          - '&7Command&f: &b%reward_command%'
+          - '&7Chance&F: &b%reward_chance%'
+          - ''
+          - '&b&lClick &8» &7To select this reward'
+        name: '&B&lCommand Reward'
+info:
+  reward:
+    item: <center>&a&l+ &fx&7%item_quantity% &e%item_name%
+    structure:
+      footer: ''
+      header:
+        - <center><GRADIENT:fc67fa>&lVoucher Rewards</GRADIENT:f4c4f3>
+        - ''
+    command: <center>&a&l+ &e%reward_command%
+  give:
+    placed into inventory: 'Voucher was placed in player: %player_name%''s inventory'
+    dropped near player: 'Voucher was dropped near player: %player_name% (full inventory)'
+error:
+  category already exists: '&cA category with that id already exists'
+  no permission: '&cYou do not have enough permission!'
+  not allowed to use: '&cYou are not allowed to use that voucher'
+  redeem limit reached: '&cYou cannot redeem that voucher anymore!'
+  player offline: '&4%value% &cis not online currently!'
+  not enough money: '&cYou do not have enough money!'
+  player not found: '&4%value% &cwas not found!'
+  redeem history cleared: '&aSuccessfully cleared the redeem history of specified
+    player(s)'
+  not a number: '&4%value% &cis not a valid number!'
+  voucher already exists: '&cA voucher with that id already exists'
+  category contains voucher: '&CThat category already contains the voucher'
+  voucher not found: '&cCannot find a voucher with the id: &4%voucher_id%'
+  voucher cooldown: '&cYou can redeem that voucher in &4%cooldown_time%'
+button:
+  number key: 'Press # Key'
+  left click: Left Click
+  right click: Right Click
+  left shift click: Shift+Left Click
+  middle click: Middle Click
+  drop key: Press Drop Key

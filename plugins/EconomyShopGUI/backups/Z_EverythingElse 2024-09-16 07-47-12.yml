@@ -1,0 +1,20 @@
+item:
+  displayname: '&aZ_EverythingElse'
+  material: BEACON
+  lore:
+  - '&4This example section was automatically added'
+  - '&4because the shops config still exists,'
+  - '&4but there was no sections config found'
+  - '&4for section &c''Z_EverythingElse''.'
+  - '&fThis is a commun mistake while removing shops,'
+  - '&fmake sure both section and shop config files are removed.'
+  enchantment-glint: false
+hidden: false
+enable: true
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+slot: 0
+title: '&c&lExample section'
+display-item: false

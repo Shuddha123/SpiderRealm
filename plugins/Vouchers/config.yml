@@ -1,0 +1,30 @@
+# The global prefix for the plugin
+prefix: <GRADIENT:fc67fa>&lVouchers</GRADIENT:f4c4f3> &8»
+# The default language for the plugin
+language: en_us
+# If true, the reward picker menu will ignore reward chances
+reward select always gives: true
+# If true, anyone can redeem a voucher, but if they have the permission, it prevents redeems
+voucher permission blocks usage: false
+# If true, vouchers will log if the voucher was placed in the user's inventory or dropped
+log voucher give status: true
+# If true, vouchers will tell the player what they got
+show voucher reward info: true
+# If true, players cannot redeem a voucher while shifting/sneaking
+prevent redeem while sneaking: false
+# If true, each reward will be broadcasted assuming you have a broadcast msg 
+broadcast individual rewards: true
+gui:
+  shared buttons:
+    back button:
+      # 
+      item: DARK_OAK_DOOR
+    previous button:
+      # 
+      item: ARROW
+    next button:
+      # 
+      item: ARROW
+    exit button:
+      # 
+      item: BARRIER

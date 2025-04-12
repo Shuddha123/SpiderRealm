@@ -1,0 +1,12 @@
+# File Format Example:
+#  spawners:
+#    spawnerId:
+#      location: world,x,y,z
+#      entityType: ENTITY_TYPE
+#      settings: exp,active,range,stop,delay,slots,maxExp,minMobs,maxMobs,stack,time,equipment
+#      inventory:
+#        - ITEM_TYPE:amount
+#        - ITEM_TYPE;durability:amount,durability:amount,...
+
+data_version: 2
+spawners: {}

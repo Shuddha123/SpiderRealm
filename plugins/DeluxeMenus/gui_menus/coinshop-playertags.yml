@@ -1,0 +1,651 @@
+size: 54
+menu_title: 'Player Tags'
+
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-53]
+    
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    data: 1
+    slot: 49
+    hide_effects: true
+    display_name: "&cGo Back"
+
+    click_commands:
+      - '[openmenu] coinshop'
+
+  '1':
+    material: NAME_TAG
+    data: 1
+    slot: 10
+    display_name: "&8[&4Grinder&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.grinder'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fGrinder &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '2':
+    material: NAME_TAG
+    data: 1
+    slot: 11
+    display_name: "&8[&cNuker&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.nuker'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fNuker &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '3':
+    material: NAME_TAG
+    data: 1
+    slot: 12
+    display_name: "&8[&5Simp&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.simp'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fSimp &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '4':
+    material: NAME_TAG
+    data: 1
+    slot: 13
+    display_name: "&8[&deGirl&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.egirl'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &feGirl &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '5':
+    material: NAME_TAG
+    data: 1
+    slot: 14
+    display_name: "&8[&9eBoy&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.eboy'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &feBoy &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '6':
+    material: NAME_TAG
+    data: 1
+    slot: 15
+    display_name: "&8[&eLucky&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.lucky'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fLucky &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '7':
+    material: NAME_TAG
+    data: 1
+    slot: 16
+    display_name: "&8[&6Retro&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.retro'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fRetro &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '8':
+    material: NAME_TAG
+    data: 1
+    slot: 19
+    display_name: "&8[&fAngel&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.angel'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fAngel &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '9':
+    material: NAME_TAG
+    data: 1
+    slot: 20
+    display_name: "&8[&#daa3ffSheesh&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.sheesh'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fSheesh &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '10':
+    material: NAME_TAG
+    data: 1
+    slot: 21
+    display_name: "&8[&#d7ff5eGodly&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.godly'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fGodly &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '11':
+    material: NAME_TAG
+    data: 1
+    slot: 22
+    display_name: "&8[&#5ebfffKing&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.king'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fKing &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '12':
+    material: NAME_TAG
+    data: 1
+    slot: 23
+    display_name: "&8[&#ff5eb9Queen&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.queen'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fQueen &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '13':
+    material: NAME_TAG
+    data: 1
+    slot: 24
+    display_name: "&8[&#ff6021OG&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.og'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fOG &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '14':
+    material: NAME_TAG
+    data: 1
+    slot: 25
+    display_name: "&8[&#ff0505Killer&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.killer'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fKiller &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '15':
+    material: NAME_TAG
+    data: 1
+    slot: 28
+    display_name: "&8[&#b7ffa3Noob&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.noob'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fNoob &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '16':
+    material: NAME_TAG
+    data: 1
+    slot: 29
+    display_name: "&8[&#b92effEpic&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.epic'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fEpic &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '17':
+    material: NAME_TAG
+    data: 1
+    slot: 30
+    display_name: "&8[&#a1ff2eNoSkill&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.noskill'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fNoSkill &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '18':
+    material: NAME_TAG
+    data: 1
+    slot: 31
+    display_name: "&8[&#ff2e43OP&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.op'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fOP &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '19':
+    material: NAME_TAG
+    data: 1
+    slot: 32
+    display_name: "&8[&#8afffbSalty&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.salty'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fSalty &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '20':
+    material: NAME_TAG
+    data: 1
+    slot: 33
+    display_name: "&8[&#f78affToxic&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.toxic'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fToxic &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  '21':
+    material: NAME_TAG
+    data: 1
+    slot: 34
+    display_name: "&8[&#42baffRich&8]"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] tags.use.rich'
+      - '[console] points take %player_name% 300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fRich &#7AFE77tag!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'

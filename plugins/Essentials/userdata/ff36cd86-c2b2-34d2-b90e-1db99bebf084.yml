@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1744349289650
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1744395469160
+  login: 1744395113269
+money: '0'
+last-account-name: SHUDDHAGamarYT
+lastlocation:
+  world: 2172e26f-4495-442c-8bbb-7f9a8232c474
+  world-name: world
+  x: 199.2397644180565
+  y: 249.0
+  z: 888.6758236130928
+  yaw: -150.45494079589844
+  pitch: -10.650017738342285
+logoutlocation:
+  world: 2172e26f-4495-442c-8bbb-7f9a8232c474
+  world-name: world
+  x: 207.39256529003305
+  y: 250.0
+  z: 903.4176083986528
+  yaw: 88.07520294189453
+  pitch: 1.5000149011611938

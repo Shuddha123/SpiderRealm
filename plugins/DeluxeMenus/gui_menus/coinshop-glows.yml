@@ -1,0 +1,516 @@
+size: 45
+menu_title: 'Player Glows'
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-44]
+
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    data: 1
+    slot: 40
+    hide_effects: true
+    display_name: "&cGo Back"
+    click_commands:
+      - "[openguimenu] coinshop"
+
+  'red':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA2MmQ4ZDcyZjU4OTFjNzFmYWIzMGQ1MmUwNDgxNzk1YjNkMmQzZDJlZDJmOGI5YjUxN2Q3ZDI4MjFlMzVkNiJ9fX0=
+    slot: 10
+    priority: 1
+    display_name: "&c&lRed Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.red'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fRed &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'dark-red':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY1ZjNiYWUwZDIwM2JhMTZmZTFkYzNkMTMwN2E4NmE2MzhiZTkyNDQ3MWYyM2U4MmFiZDlkNzhmOGEzZmNhIn19fQ==
+    slot: 11
+    priority: 1
+    display_name: "&4&lDark Red Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.darkred'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fDark Red &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'gold':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE4OWYzNDdmNDI0NTBjZDJhMmU5YjhhNTM5ODgwN2QyOGM3ZjQyNTRiZDk5YThhNDk5Y2U1NDM1MzIwOTU1In19fQ==
+    slot: 12
+    priority: 1
+    display_name: "&6&lGold Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.gold'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fGold &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'yellow':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjAwYmY0YmYxNGM4Njk5YzBmOTIwOWNhNzlmZTE4MjUzZTkwMWU5ZWMzODc2YTJiYTA5NWRhMDUyZjY5ZWJhNyJ9fX0=
+    slot: 13
+    priority: 1
+    display_name: "&e&lYellow Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.yellow'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fYellow &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'green':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjk4NWEyOTk1N2Q0MGZhNTY0ZDVlMzFjYmQ5MDVlMzY5NGE2MTYzOTNjZTEzNzEwYmZjMzFiMWI4YjBhNTIyZCJ9fX0=
+    slot: 14
+    priority: 1
+    display_name: "&a&lGreen Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.green'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fGreen &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'dark-green':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNlOWY0ZGJhZGRlMGY3MjdjNTgwM2Q3NWQ4YmIzNzhmYjlmY2I0YjYwZDMzYmVjMTkwOTJhM2EyZTdiMDdhOSJ9fX0=
+    slot: 15
+    priority: 1
+    display_name: "&2&lDark Green Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.darkgreen'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fDark Green &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'aqua':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjllMTY5NzkzMDliNWE5YjY3M2Q2MGQxMzkwYmJhYjBkMDM4NWVhYzcyNTRkODI4YWRhMmEzNmE0NmY3M2E1OSJ9fX0=
+    slot: 16
+    priority: 1
+    display_name: "&b&lAqua Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.aqua'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fAqua &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'dark-aqua':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc1YjdhYzlmMGM3MTIzMDNjZDNiNjU0ZTY0NmNlMWM0YmYyNDNhYjM0OGE2YTI1MzcwZjI2MDNlNzlhNjJhMCJ9fX0=
+    slot: 19
+    priority: 1
+    display_name: "&3&lDark Aqua Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.darkaqua'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fDark Aqua &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'blue':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I1MTA2YjA2MGVhZjM5ODIxNzM0OWYzY2ZiNGYyYzdjNGZkOWEwYjAzMDdhMTdlYmE2YWY3ODg5YmUwZmJlNiJ9fX0=
+    slot: 20
+    priority: 1
+    display_name: "&9&lBlue Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.blue'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fBlue &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'dark-blue':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U3YWI3MTJjODdmNjdkNDhiOThmNzA2MzRkMWRjZmNkNTk4MGMzZDZmMGQ2MjJjZGMzMjMwOTEyMzYxYjU0ZSJ9fX0=
+    slot: 21
+    priority: 1
+    display_name: "&1&lDark Blue Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.darkblue'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fDark Blue &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'purple':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY3ZjJiNTA2MzcwYzFlODRmOTBmYmYyOWM4MGUwY2I3ZTJhYzkzMjMwMzAxYjVkOGU0MmM2OGZkZGU4OWZlMCJ9fX0=
+    slot: 22
+    priority: 1
+    display_name: "&5&lPurple Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.purple'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fPurple &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'pink':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E5ZWE2ZTM2ZjllNTc5ZjU4NmFkYjE5MzdiYjE0Mzc3YjBkNzQwMzRmZmNiMjU1NmEyYWNiNDM1NjcxNDQ4ZiJ9fX0=
+    slot: 23
+    priority: 1
+    display_name: "&d&lPink Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.pink'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fPink &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'white':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGUwZThhY2FiYWQyN2Q0NjE2ZmFlOWU0NzJjMGRlNjA4NTNkMjAzYzFjNmYzMTM2N2M5MzliNjE5ZjNlMzgzMSJ9fX0=
+    slot: 24
+    priority: 1
+    display_name: "&f&lWhite Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.white'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fWhite &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'gray':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMyOGRjZGUxNzNiZWZmOWYzZjQxYjkyMzIxM2ZjMWJiNzY3ODk2N2NjYjJlZGU3YTdjZjQwYjE4MzZiMWE3MyJ9fX0=
+    slot: 25
+    priority: 1
+    display_name: "&7&lGray Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.gray'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fGray &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'dark-gray':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FmNmZhYjc2N2NhNGQ3ZGY2MjE3Yjg5NWI2NjdiY2FjYzUyNGQ0MDcwNjg2MTlmODE5YTA3MGYzZjYyOWNlMCJ9fX0=
+    slot: 29
+    priority: 1
+    display_name: "&8&lDark Gray Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.darkgray'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fDark Gray &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'black':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc0ZmU5Y2I4MDAyOWQ2NjM0NTI3N2FhNTYwZDQxZWYxMDMwOTYyYjdmMjlhYmYyMzk2MWQ5ZWJhODQyNTBhMyJ9fX0=
+    slot: 33
+    priority: 1
+    display_name: "&8&lBlack Player Glow"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6900 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+      - ""
+
+    click_commands:
+      - '[givepermission] eglow.color.black'
+      - '[console] points take %player_name% 900'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fBlack &#7AFE77Player Glow!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f900 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+

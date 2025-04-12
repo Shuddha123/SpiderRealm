@@ -1,0 +1,30 @@
+location: world:182.500:250.000:900.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: red_Candle !ENCHANTED'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&c&lFIRE CRATE'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&7Obtain @ /coinshop'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&c◆ &fLeft Click &7to view'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&c◆ &fRight Click &7to open'
+    height: 0.3
+  - content: '&7you have &f%excellentcrates_keys_fire% &7keys'
+    height: 0.3
+  actions: {}

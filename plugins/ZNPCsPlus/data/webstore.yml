@@ -1,0 +1,26 @@
+id: webstore
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: 9ee3a923-4bb6-431e-9cc7-8d07bf02a132
+world: world
+location:
+  x: 201.58311887491334
+  y: 250.0
+  z: 920.1856579694247
+  yaw: 178.35132
+  pitch: 11.09997
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#2bfb00&lW&#25e724&lE&#1fd349&lB&#19bf6d&lS&#12aa92&lT&#0c96b6&lO&#0682db&lR&#006eff&lE'
+actions:
+- lol.pyr.znpcsplus.interaction.playercommand.PlayerCommandAction;c3RvcmU=;0;ANY_CLICK;0

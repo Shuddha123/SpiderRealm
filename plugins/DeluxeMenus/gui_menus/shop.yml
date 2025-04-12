@@ -1,0 +1,88 @@
+open_command: shop
+register_command: false
+size: 27
+menu_title: '             &8ѕʜᴏᴘ ᴍᴇɴᴜ    '
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-26]
+
+  'gear_shop':
+    material: TOTEM_OF_UNDYING
+    data: 1
+    slot: 11
+    display_name: "&dGear Shop"
+    lore:
+      - "&8Buy + Sell Shop"
+      - ""  
+      - "&fPurchase all items you'll need"
+      - "&fwhen heading in combat from here!"
+      - ""
+      - "&e&lᴄʟɪᴄᴋ ᴛᴏ ʙʀᴏᴡѕᴇ"
+    left_click_commands:
+      - '[player] shop Gear'
+
+  'food':
+    material: COOKED_BEEF
+    data: 1
+    slot: 12
+    display_name: "&#FFAA00Food Shop"
+    lore:
+      - "&8Buy + Sell Shop"
+      - ""  
+      - "&fAquire quick food for your to"
+      - "&fconsume without grinding and farming!"
+      - ""
+      - "&e&lᴄʟɪᴄᴋ ᴛᴏ ʙʀᴏᴡѕᴇ"
+    left_click_commands:
+      - '[player] shop Food'
+      
+  'SPAWNER':
+    material: SPAWNER
+    data: 1
+    slot: 13
+    hide_attributes: true # true or false
+    display_name: "&#78678CSpawner Shop"
+    lore:
+      - "&8Buy Shop"
+      - ""  
+      - "&fAquire spawners for your to"
+      - "&fearn money and resources easily!"
+      - ""
+      - "&e&lᴄʟɪᴄᴋ ᴛᴏ ʙʀᴏᴡѕᴇ"
+    left_click_commands:
+      - '[openguimenu] spawners'
+
+  'farming':
+    material: SUGAR_CANE
+    data: 1
+    slot: 14
+    display_name: "&aFarming Shop"
+    lore:
+      - "&8Buy + Sell Shop"
+      - ""  
+      - "&fCollect or depart all of your"
+      - "&fmob drop goodness in this shop!"
+      - ""
+      - "&e&lᴄʟɪᴄᴋ ᴛᴏ ʙʀᴏᴡѕᴇ"
+    left_click_commands:
+      - '[player] shop Farming'
+
+  'ores':
+    material: DIAMOND
+    data: 1
+    slot: 15
+    display_name: "&#5A8091Mining Shop"
+    lore:
+      - "&8Buy + Sell Shop"
+      - ""  
+      - "&fDrop off all of your excess"
+      - "&fmining produce here!"
+      - ""
+      - "&e&lᴄʟɪᴄᴋ ᴛᴏ ʙʀᴏᴡѕᴇ"
+    left_click_commands:
+      - '[player] shop Ores'

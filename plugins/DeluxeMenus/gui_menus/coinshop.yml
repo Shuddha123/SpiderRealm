@@ -1,0 +1,134 @@
+open_command: coinshop
+register_command: true
+size: 27
+menu_title: 'Coin Shop'
+
+
+items:
+
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-44]
+
+
+
+  'main':
+    material: SUNFLOWER
+    data: 1
+    slot: 10
+    display_name: "&#ffeb14&lɪɴғᴏʀᴍᴀᴛɪᴏɴ"
+    lore:
+      - "&7What are coins?"
+      - " "
+      - "&fCoins is PandaMC's premium currency."
+      - "&fIt can be used to purchase&e keys, playertags,"
+      - "&eperks & many more things!"
+      - " "
+      - "&7How do I obtain coins?"
+      - " "
+      - "&eEasy!&f You can purchase"
+      - "&fcoins from our webstore which is"
+      - "&esᴛᴏʀᴇ.ғɪʀᴇᴍᴄ.ғᴜɴ &fthere you will have"
+      - "&fdifferent packages from which you can choose."
+      - " "
+      - "&e&lsᴇʟᴇᴄᴛ ᴏᴘᴛɪᴏɴs ɢɪᴠᴇɴ!"
+      
+  'player-tags':
+    material: NAME_TAG
+    data: 1
+    slot: 13
+    display_name: "&#F266FF&lPlayer Tags"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&fWant to look cool with custom tags?"
+      - "&fCheck out this shop, all tags available!"
+      - " "
+      - "&#9A00FF&l⚡&#A200FD&l &#AA00FB&lᴏ&#B100F9&lʙ&#B900F7&lᴛ&#C100F5&lᴀ&#C900F3&lɪ&#D000F1&lɴ&#D800EF&l &#E000ED&lᴄ&#E800EB&lᴏ&#EF00E9&lɪ&#F700E7&lɴ&#FF00E5&ls"
+      - " "
+      - "&d&nsᴛᴏʀᴇ.ᴘᴀɴᴅᴀᴍᴄ.ғᴜɴ"
+      - " "
+      - "&f&l→&f Coin Balance: &d%playerpoints_points_formatted%"
+      - " "
+      - "➥ &#A900FF&lC&#AE00FF&lL&#B300FE&lI&#B800FE&lC&#BD00FE&lK &#C700FD&lT&#CC00FD&lO &#D700FC&lO&#DC00FC&lP&#E100FC&lE&#E600FB&lN &#F000FB&lS&#F500FB&lH&#FA00FA&lO&#FF00FA&lP"
+
+    click_commands:
+      - '[openmenu] coinshop-playertags'
+
+  'crate-keys':
+    material: PURPLE_CANDLE
+    data: 1
+    slot: 12
+    display_name: "&#FB08EB⚡ &#EF07EFC&#E906F0r&#E305F2a&#DD04F4t&#D604F6e &#CA02FAK&#C401FBe&#BE01FDy&#B800FFs"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&fWant to test your luck for amazing items?"
+      - "&fCheck out this shop, all keys available!"
+      - " "
+      - "&#9A00FF&l⚡&#A200FD&l &#AA00FB&lᴏ&#B100F9&lʙ&#B900F7&lᴛ&#C100F5&lᴀ&#C900F3&lɪ&#D000F1&lɴ&#D800EF&l &#E000ED&lᴄ&#E800EB&lᴏ&#EF00E9&lɪ&#F700E7&lɴ&#FF00E5&ls"
+      - " "
+      - "&d&nsᴛᴏʀᴇ.ᴘᴀɴᴅᴀᴍᴄ.ғᴜɴ"
+      - " "
+      - "&f&l→&f Coin Balance: &d%playerpoints_points_formatted%"
+      - " "
+      - "➥ &#A900FF&lC&#AE00FF&lL&#B300FE&lI&#B800FE&lC&#BD00FE&lK &#C700FD&lT&#CC00FD&lO &#D700FC&lO&#DC00FC&lP&#E100FC&lE&#E600FB&lN &#F000FB&lS&#F500FB&lH&#FA00FA&lO&#FF00FA&lP"
+
+    click_commands:
+      - '[openmenu] coinshop-cratekeys'
+
+  'chat-colors':
+    material: LIME_DYE
+    data: 1
+    slot: 16
+    display_name: "&#78FF59&lChat Colors"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&fWant to look cool with chat colors?"
+      - "&fCheck out this shop, all chat colors available!"
+      - " "
+      - "&#9A00FF&l⚡&#A200FD&l &#AA00FB&lᴏ&#B100F9&lʙ&#B900F7&lᴛ&#C100F5&lᴀ&#C900F3&lɪ&#D000F1&lɴ&#D800EF&l &#E000ED&lᴄ&#E800EB&lᴏ&#EF00E9&lɪ&#F700E7&lɴ&#FF00E5&ls"
+      - " "
+      - "&d&nsᴛᴏʀᴇ.ᴘᴀɴᴅᴀᴍᴄ.ғᴜɴ"
+      - " "
+      - "&f&l→&f Coin Balance: &d%playerpoints_points_formatted%"
+      - " "
+      - "➥ &#A900FF&lC&#AE00FF&lL&#B300FE&lI&#B800FE&lC&#BD00FE&lK &#C700FD&lT&#CC00FD&lO &#D700FC&lO&#DC00FC&lP&#E100FC&lE&#E600FB&lN &#F000FB&lS&#F500FB&lH&#FA00FA&lO&#FF00FA&lP"
+
+    click_commands:
+      - '[openmenu] coinshop-chatcolors'
+
+  'glow':
+    material: LEATHER_CHESTPLATE
+    slot: 15
+    display_name: "&#41ACFF&leGlow"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&fWant to look with glowing effects?"
+      - "&fCheck out this shop, all eGlows available!"
+      - " "
+      - "&#9A00FF&l⚡&#A200FD&l &#AA00FB&lᴏ&#B100F9&lʙ&#B900F7&lᴛ&#C100F5&lᴀ&#C900F3&lɪ&#D000F1&lɴ&#D800EF&l &#E000ED&lᴄ&#E800EB&lᴏ&#EF00E9&lɪ&#F700E7&lɴ&#FF00E5&ls"
+      - " "
+      - "&d&nsᴛᴏʀᴇ.ᴘᴀɴᴅᴀᴍᴄ.ғᴜɴ"
+      - " "
+      - "&f&l→&f Coin Balance: &d%playerpoints_points_formatted%"
+      - " "
+      - "➥ &#A900FF&lC&#AE00FF&lL&#B300FE&lI&#B800FE&lC&#BD00FE&lK &#C700FD&lT&#CC00FD&lO &#D700FC&lO&#DC00FC&lP&#E100FC&lE&#E600FB&lN &#F000FB&lS&#F500FB&lH&#FA00FA&lO&#FF00FA&lP"
+    click_commands:
+      - '[openguimenu] coinshop-glows'
+  'perks':
+    material: NETHER_STAR
+    data: 1
+    slot: 14
+    display_name: "&#FFE259✦ &#FFCE56P&#FFC555e&#FFBB54r&#FFB152k&#FFA751s"
+    lore:
+      - " "
+      - "&#FFE259&lC&#FFDC58&lO&#FFD657&lM&#FFD057&lI&#FFCA56&lN&#FFC555&lG &#FFB953&lS&#FFB353&lO&#FFAD52&lO&#FFA751&lN"

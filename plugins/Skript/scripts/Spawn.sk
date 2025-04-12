@@ -1,0 +1,79 @@
+#Made By  MrRJay :https://discord.gg/4R32vkvmzy
+on load:
+	delete {spawnteleporting::*}
+	delete {pos::*}
+
+	
+command /spawn:
+	aliases: /lobby, /hub
+	trigger:
+		if {spawn} is not set:
+			send "&cSpawn location is not set!"
+			stop
+		if {spawnteleporting::%player's uuid%} is not set:
+			set {spawnteleporting::%player's uuid%} to true
+			set {pos::%player's uuid%} to player's location
+		if {spawnteleporting::%player's uuid%} is set:
+			send "<##00FF30>✈ <##AAAAAA>Teleporting..."
+			send "<##00FF30>✈ <##AAAAAA>Teleportation will commance in <##FFFFFF>5 seconds.<##AAAAAA> ((Dont Move))"
+			wait 5 second
+		if {spawnteleporting::%player's uuid%} is set:
+			send "<##FFEE00>✈ <##AAAAAA>Telepotation Commencing..."
+			delete {spawnteleporting::%player's uuid%}
+			delete {pos::%player's uuid%}
+			teleport player to {spawn}
+			play sound "entity.enderman.teleport" to player
+
+command /setspawn:
+	permission: spawn.setspawn
+	permission message: &cYou don't have permission to execute this command!
+	trigger:
+		set {spawn} to location of player
+		send "&aYou have successfully set the spawn location at your location!"
+
+command /delspawn:
+	permission: spawn.delspawn
+	permission message: &cYou don't have permission to execute this command!
+	trigger:
+		delete {spawn}
+		send "&aYou have successfully unset the spawn location!"
+
+on first join:
+	teleport player to {spawn}
+	set join message to ""
+	wait 1 tick
+	teleport player to {spawn}
+	send "<##37BFF8>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ PANDAMC"
+	send "<##37BFF8>ᴊᴏɪɴ ᴛʜᴇ ᴇxᴀᴍᴘʟᴇꜱᴍᴘ ᴅɪꜱᴄᴏʀᴅ ᴄᴏᴍᴍᴜɴɪᴛʏ!"
+	send "<##37BFF8>● <open url:http://discord.gg/examplesmp>&f&ndiscord.gg/examplesmp"
+	make console execute command "/ibooks open updates %player's name%"
+
+on join:
+	set join message to ""
+	if {pos::%player's uuid%} is set:
+		delete {pos::%player's uuid%}
+	if {spawnteleporting::%player's uuid%} is set:
+		delete {spawnteleporting::%player's uuid%}
+	wait 1 tick
+	if player's world is "spawn":
+		teleport player to {spawn}
+
+on quit:
+	set leave message to ""
+	if {pos::%player's uuid%} is set:
+		delete {pos::%player's uuid%}
+	if {spawnteleporting::%player's uuid%} is set:
+		delete {spawnteleporting::%player's uuid%}
+
+on respawn:
+	wait 1 tick
+	teleport player to {spawn}
+
+on player move:
+	if {spawnteleporting::%player's uuid%} is set:
+		if distance between {pos::%player's uuid%} and player's location is bigger than 0.5:
+			delete {spawnteleporting::%player's uuid%}
+			delete {pos::%player's uuid%}
+			send "<##FB5454>Teleport cancelled because you moved."
+			send action bar "<##FB5454>Teleport cancelled because you moved." to player
+			

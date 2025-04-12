@@ -1,0 +1,27 @@
+id: playtime
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: 7966377b-34e8-4b1b-bce8-a9c93bf225c4
+world: world
+location:
+  x: 193.49149219546882
+  y: 250.0
+  z: 920.316924389809
+  yaw: -173.54889
+  pitch: -2.8500333
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#00f3fb&lP&#00f4ea&ll&#00f5da&la&#00f6c9&ly&#00f6b8&lT&#00f7a8&li&#00f897&lm&#00f987&le
+    &#00fa76&lR&#00fb65&le&#00fc55&la&#00fc44&lw&#00fd33&lr&#00fe23&ld&#00ff12&ls'
+actions:
+- lol.pyr.znpcsplus.interaction.playercommand.PlayerCommandAction;cGxheXRpbWU=;0;ANY_CLICK;0

@@ -1,0 +1,26 @@
+id: rtp
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: 7319e824-5c9b-4c22-b25a-1d391a88ff10
+world: world
+location:
+  x: 194.40189566441563
+  y: 250.0
+  z: 903.5966560310385
+  yaw: -88.653564
+  pitch: 0.8999902
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#fb850a&lR&#e1930f&lA&#c8a013&lN&#aeae18&lD&#94bb1c&lO&#7bc921&lM&#61d625&l-&#47e42a&lR&#2ef12e&lT&#14ff33&lP'
+actions:
+- lol.pyr.znpcsplus.interaction.playercommand.PlayerCommandAction;cnRwIHBsYXllciAlcGxheWVyX25hbWUlIHdvcmxk;0;ANY_CLICK;0

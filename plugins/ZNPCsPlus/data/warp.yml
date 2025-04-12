@@ -1,0 +1,26 @@
+id: warp
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: 60da4daa-80df-4bc7-9f46-ceae3aad6b4c
+world: world
+location:
+  x: 200.4753373321051
+  y: 250.0
+  z: 886.5524406464373
+  yaw: 0.7487793
+  pitch: -9.685755E-7
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#2bfb00&lW&#20fc0c&lA&#16fd18&lR&#0bfe24&lP&#00ff30&lS'
+actions:
+- lol.pyr.znpcsplus.interaction.playercommand.PlayerCommandAction;d2FycHM=;0;ANY_CLICK;0

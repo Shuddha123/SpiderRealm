@@ -1,0 +1,13 @@
+[
+  {
+    "hearts": 10,
+    "banTime": 0,
+    "maxHearts": 100,
+    "eliminated": false,
+    "joinedAfterBan": true,
+    "healthOnLeave": 20.0,
+    "IP": "127.0.0.1",
+    "respawnAtBeaconLocation": "done",
+    "UUID": "ff36cd86-c2b2-34d2-b90e-1db99bebf084"
+  }
+]

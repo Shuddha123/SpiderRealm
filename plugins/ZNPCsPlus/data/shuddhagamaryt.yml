@@ -1,0 +1,26 @@
+id: shuddhagamaryt
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: 5adcb513-b86a-4795-b36b-f5d39b54c9a8
+world: world
+location:
+  x: 141.72044905846303
+  y: 239.0
+  z: 903.4027360186514
+  yaw: -86.399666
+  pitch: 5.8499966
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin: mirror
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#fb0000&lL&#fb0303&le&#fc0606&ld&#fc0909&le&#fd0c0c&lr&#fd1010&lb&#fe1313&lo&#fe1616&lr&#ff1919&ld&#ff1c1c&ls'
+actions: []

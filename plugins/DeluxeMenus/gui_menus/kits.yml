@@ -1,0 +1,193 @@
+    menu_title: '              &8ᴋɪᴛs ᴍᴇɴᴜ'
+    open_command:
+    - kit
+    - kits
+    - kt
+    - k
+    register_command: true
+    size: 44
+    items:
+#############################################################################################
+      'close':
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0=
+        slot: 40
+        display_name: '&#93291e&lC&#9e2822&ll&#aa2725&lo&#b52629&ls&#c0252c&le &#cb2430&lM&#d72333&le&#e22237&ln&#ed213a&lu'
+        lore:
+        - ''
+        - '&fClick here to'
+        - '&fclose this menu!'
+        left_click_commands:
+        - '[close]'
+        right_click_commands:
+        - '[close]'
+###############################################################
+      '1':
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRjNjY5YWQzYzdmM2ZjODU2NjU1MjFkMGUwMDBmZGQ0MjUwYWIzZThhYWMxOGFmZGNmOWQzYjM1ZjVkMWZkZiJ9fX0=
+        slot: 10
+        display_name: '&7⌈&f&lᴘʟᴀʏᴇʀ&7⌋'
+        lore:
+        - '&8sᴜʀᴠɪᴠᴀʟ ᴋɪᴛs ᴄᴀᴛᴇɢᴏʀʏ'
+        - ''
+        - '&f┏ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ'
+        - '&f&l︳ &fEveryone can claim these'
+        - '&f&l︳ &ffree player kits.'
+        - ''
+        - '&e▪ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʟᴀɪᴍ ᴋɪᴛ!'
+        click_commands:
+        - '[player] kit player' 
+        - '[close]'  
+###############################################################
+      '2':
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA4MDNmY2M4YTk0MGNkNDllZDQ5NmE0YTVlNTVjYTA5ZjRmNDI4ZTVmMWE0ZWQ3YWM4ZjIzMDE0NWEwZTUxZCJ9fX0=
+        slot: 11
+        display_name: '&d⌈&f&l&#4A00E0&lᴠ&#6C17E1&lɪ&#8E2DE2&lᴘ&d⌋'
+        lore:
+        - '&8sᴜʀᴠɪᴠᴀʟ ᴋɪᴛs ᴄᴀᴛᴇɢᴏʀʏ'
+        - ''
+        - '&5┏ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ'
+        - '&5&l︳ &fEveryone with a &d⌈&f&l&#4A00E0&lᴠ&#6C17E1&lɪ&#8E2DE2&lᴘ&d⌋ &frank'
+        - '&5&l︳ &fcan claim these kits.'
+        - ''
+        - '&e▪ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʟᴀɪᴍ ᴋɪᴛ!'
+        click_commands:
+        - '[player] kit vip' 
+        - '[close]'  
+###############################################################
+      '3':
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNkYzhjZDdmMDcyNDRmMTI0NDI2MmVlMTFhYTBlN2Q5MTllODcwZTFmZDVhM2UyZDNiM2RlNTgwMmJmOTUxYSJ9fX0=
+        slot: 12
+        display_name: '&e⌈&#F37335&lᴠ&#F68F33&lɪ&#FAAC32&lᴘ&#FDC830&l+&e⌋'
+        lore:
+        - '&8sᴜʀᴠɪᴠᴀʟ ᴋɪᴛs ᴄᴀᴛᴇɢᴏʀʏ'
+        - ''
+        - '&6┏ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ'
+        - '&6&l︳ &fEveryone with a &e⌈&#F37335&lᴠ&#F68F33&lɪ&#FAAC32&lᴘ&#FDC830&l+&e⌋ &frank'
+        - '&6&l︳ &fcan claim these kits.'
+        - ''
+        - '&e▪ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʟᴀɪᴍ ᴋɪᴛ!'
+        click_commands:
+        - '[player] kit vip+' 
+        - '[close]'  
+###############################################################
+      '4':
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTEzMTY1YjViOTg3ZmYwODk3ZmQ4OGY0N2ZiYmVkYWJhOTIyNzk2NmRlYjM2YzhmNGY3NWFmYTE5NGFhY2I5NiJ9fX0=
+        slot: 13
+        display_name: '&b⌈&#2193B0&lᴇ&#34A4BF&lʟ&#47B4CF&lɪ&#5AC5DE&lᴛ&#6DD5ED&lᴇ&b⌋'
+        lore:
+        - '&8sᴜʀᴠɪᴠᴀʟ ᴋɪᴛs ᴄᴀᴛᴇɢᴏʀʏ'
+        - ''
+        - '&3┏ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ'
+        - '&3&l︳ &fEveryone with a &b⌈&#2193B0&lᴇ&#34A4BF&lʟ&#47B4CF&lɪ&#5AC5DE&lᴛ&#6DD5ED&lᴇ&b⌋ &frank'
+        - '&3&l︳ &fcan claim these kits.'
+        - ''
+        - '&e▪ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʟᴀɪᴍ ᴋɪᴛ!'
+        click_commands:
+        - '[player] kit elite' 
+        - '[close]'  
+###############################################################
+      '5':
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE3YjZhMDY3N2VmMmY1YWM0MzAzMTgyYTRkNmE2ZGE4NjE4Y2U3YzAyNmE0YWJlY2FmY2Q3NWRhNTI2MmM5OCJ9fX0=
+        slot: 14
+        display_name: '&a⌈&#56AB2F&lᴘ&#64B438&lʀ&#71BD40&lᴇ&#7FC649&lᴍ&#8DCE52&lɪ&#9AD75A&lᴜ&#A8E063&lᴍ&a⌋'
+        lore:
+        - '&8sᴜʀᴠɪᴠᴀʟ ᴋɪᴛs ᴄᴀᴛᴇɢᴏʀʏ'
+        - ''
+        - '&2┏ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ'
+        - '&2&l︳ &fEveryone with a &a⌈&#56AB2F&lᴘ&#64B438&lʀ&#71BD40&lᴇ&#7FC649&lᴍ&#8DCE52&lɪ&#9AD75A&lᴜ&#A8E063&lᴍ&a⌋ &frank'
+        - '&2&l︳ &fcan claim these kits.'
+        - ''
+        - '&e▪ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʟᴀɪᴍ ᴋɪᴛ!'
+        click_commands:
+        - '[player] kit premium' 
+        - '[close]'  
+###############################################################
+      '6':
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWNjNGFmY2QzOTRiMjEwNzc2YWEyM2E2YzdkMDZmZTJkYmMwZmZmMDU3ZWFlZGZkMWJiNmVkZDA4MDAxMzVjNCJ9fX0=
+        slot: 15
+        display_name: '&6⌈&#CAC531&lᴋ&#D8D658&lɪ&#E5E880&lɴ&#F3F9A7&lɢ&6⌋'
+        lore:
+        - '&8sᴜʀᴠɪᴠᴀʟ ᴋɪᴛs ᴄᴀᴛᴇɢᴏʀʏ'
+        - ''
+        - '&e┏ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ'
+        - '&e&l︳ &fEveryone with a &6⌈&#CAC531&lᴋ&#D8D658&lɪ&#E5E880&lɴ&#F3F9A7&lɢ&6⌋ &frank'
+        - '&e&l︳ &fcan claim these kits.'
+        - ''
+        - '&e▪ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʟᴀɪᴍ ᴋɪᴛ!'
+        click_commands:
+        - '[player] kit king' 
+        - '[close]'  
+###############################################################
+      '7':
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ4MTJkYjcxZDRlN2JhYzAyMWQ1MzQyOTQ0MGM3Y2I3NTM2MzI3NjYxYjJlOWEzYzZlZGQwOWM4ZTYxM2RlIn19fQ==
+        slot: 16
+        display_name: '&3⌈&#3A6073&lɢ&#3A6EA4&lᴏ&#3A7BD5&lᴅ&3⌋'
+        lore:
+        - '&8sᴜʀᴠɪᴠᴀʟ ᴋɪᴛs ᴄᴀᴛᴇɢᴏʀʏ'
+        - ''
+        - '&b┏ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ'
+        - '&b&l︳ &fEveryone with a &3⌈&#3A6073&lɢ&#3A6EA4&lᴏ&#3A7BD5&lᴅ&3⌋ &frank'
+        - '&b&l︳ &fcan claim these kits.'
+        - ''
+        - '&e▪ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʟᴀɪᴍ ᴋɪᴛ!'
+        click_commands:
+        - '[player] kit god' 
+        - '[close]'   
+###############################################################
+      '8':
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTcyYjRhNWUzNTk5MTA2MTIxZmFmOTNkNGIyY2E3ZGE5OTg0MGMwYTgwYWU0YjZkNGEzYWE1ZjVhYzQyY2IwZiJ9fX0=
+        slot: 22
+        display_name: '&4⌈&#93291E&lᴜ&#AA2725&lʟ&#C0252C&lᴛ&#D72333&lʀ&#ED213A&lᴀ&4⌋'
+        lore:
+        - '&8sᴜʀᴠɪᴠᴀʟ ᴋɪᴛs ᴄᴀᴛᴇɢᴏʀʏ'
+        - ''
+        - '&c┏ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ'
+        - '&c&l︳ &fEveryone with a &4⌈&#93291E&lᴜ&#AA2725&lʟ&#C0252C&lᴛ&#D72333&lʀ&#ED213A&lᴀ&4⌋ &frank'
+        - '&c&l︳ &fcan claim these kits.'
+        - ''
+        - '&e▪ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʟᴀɪᴍ ᴋɪᴛ!'
+        click_commands:
+        - '[player] kit ultra' 
+        - '[close]'   
+###############################################################      
+      GLASS-BLACK:
+        material: black_stained_glass_pane
+        display_name: '&f'
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 41
+        - 42
+        - 43
+        - 44
+
+# 0250S8Q59E7O9MUYTML

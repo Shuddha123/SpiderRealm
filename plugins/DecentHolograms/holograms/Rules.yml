@@ -1,0 +1,38 @@
+location: world:208.500:253.000:911.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#FF14DC&lL&#FF13CC&li&#FF11BD&lf&#FF10AD&le&#FF0E9D&lS&#FF0D8D&lt&#FF0B7E&le&#FF0A6E&la&#FF095E&ll
+      &#FF063F&lR&#FF042F&lu&#FF031F&ll&#FF0110&le&#FF0000&ls'
+    height: 0.3
+  - content: '&7(Only For Lifesteal)'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&a&l✔ Allowed &7>> &fTp Trapping'
+    height: 0.3
+  - content: '&a&l✔ Allowed &7>> &fGriefing'
+    height: 0.3
+  - content: '&a&l✔ Allowed &7>> &fStealing'
+    height: 0.3
+  - content: '&a&l✔ Allowed &7>> &fSpawn Killing'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&c&l✕ Not Allowed &7>> &fAlt Grinding'
+    height: 0.3
+  - content: '&c&l✕ Not Allowed &7>> &fStaff Tp Trapping'
+    height: 0.3
+  - content: '&c&l✕ Not Allowed &7>> &fHacked Clients'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&#FF14DC&lM&#FF12C4&lo&#FF10AB&lr&#FF0D93&le &#FF0962&lR&#FF0749&lu&#FF0431&ll&#FF0218&le&#FF0000&ls
+      &#FFFFFF&ld&#FFF6F6&li&#FFEDED&ls&#FFE5E5&lc&#FFDCDC&lo&#FFD3D3&lr&#FFCACA&ld&#FFC1C1&l.&#FFB9B9&lg&#FFB0B0&lg&#FFA7A7&l/&#FF9E9E&lf&#FF9595&li&#FF8C8C&lr&#FF8484&le&#FF7B7B&lm&#FF7272&lc'
+    height: 0.3
+  actions: {}

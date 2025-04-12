@@ -1,0 +1,2534 @@
+#########################################################################################
+#                                                                                       #
+# LifestealCore, a premium resource by Norska @ https://norska.dev                      #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome                                                 #
+# Support: https://norska.dev/discord/                                                  #
+#                                                                                       #
+# You are editing the messages.yml file of LifestealCore.                               #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# If PlaceholderAPI is installed you can use any placeholder inside messages,           #
+# make sure to properly install any extension using /papi ecloud.                       #
+#                                                                                       #
+# Placeholders that are inside {} (e.g {0}, {1}) are inner placeholders.                #
+# To use PAPI's placeholders, use them normally, like %player_name%, etc.               #
+#                                                                                       #
+#########################################################################################   
+
+messages:
+
+   # Note: Use {PREFIX} in any message to add the below prefix!
+   prefix: "<GRADIENT:FF1F00>LifestealCore</GRADIENT:FF06B9>"     
+
+   EVENT_DEATH_KILLER:
+   # Placeholders: {0} = victim, {1} = victim hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou stole &c1❤ &ffrom &c{0} &7(&c{1}❤&7)&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou stole &c1❤ &ffrom &c{0} &7(&c{1}❤&7)&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou stole &c1❤ &ffrom &c{0} &7(&c{1}❤&7)&f!"
+   
+   # Note: Shows when bans are disabled and the victim is at minimum hearts.      
+   EVENT_DEATH_KILLER_NO_DROP:
+   # Placeholders: {0} = victim
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou killed &c{0} &fbut didn't get any hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou killed &c{0} &fbut didn't get any hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou killed &c{0} &fbut didn't get any hearts!"  
+         
+   EVENT_DEATH_KILLER_INSTANT_ELIMINATION:
+   # Placeholders: {0} = victim
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou stole &c1❤ &ffrom &c{0}&f & instantly eliminated them!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou stole &c1❤ &ffrom &c{0}&f & instantly eliminated them!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou stole &c1❤ &ffrom &c{0}&f & instantly eliminated them!"       
+         
+   EVENT_DEATH_VICTIM_PLAYER:
+   # Placeholders: {0} = killer, {1} = killer hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou lost &c1❤ &fto &c{0} &7(&c{1}❤&7)&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou lost &c1❤ &fto &c{0} &7(&c{1}❤&7)&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou lost &c1❤ &fto &c{0} &7(&c{1}❤&7)&f!"
+   
+    # Note: Shows when bans are disabled and the victim is at minimum hearts.       
+   EVENT_DEATH_VICTIM_PLAYER_NO_DROP:
+   # Placeholders: {0} = killer, {1} = killer hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou died by &c{0} &7(&c{1}❤&7) &fbut didn't lose any hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou died by &c{0} &7(&c{1}❤&7) &fbut didn't lose any hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou died by &c{0} &7(&c{1}❤&7) &fbut didn't lose any hearts!" 
+   
+   # Note: Shows when victim dies by a player in a hardcore world (instant elimination).      
+   EVENT_DEATH_VICTIM_PLAYER_INSTANT_ELIMINATION:
+   # Placeholders: {0} = killer
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou were instantly eliminated by &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou were instantly eliminated by &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou were instantly eliminated by &c{0}&f!"
+         
+   EVENT_DEATH_PLAYER_VS_PLAYER_BROADCAST:
+   # Placeholders: {0} = killer, {1} = killer hearts, {2} = victim, {3} = victim hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &7(&c{1}❤&7) &fhas slain &c{2} &7(&c{3}❤&7)&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &7(&c{1}❤&7) &fhas slain &c{2} &7(&c{3}❤&7)&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &7(&c{1}❤&7) &fhas slain &c{2} &7(&c{3}❤&7)&f!"
+         
+   EVENT_DEATH_VICTIM_MOB:
+   # Placeholders: {0} = hearts 
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou lost &c{0}❤&f by dying from a mob!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou lost &c{0}❤&f by dying from a mob!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou lost &c{0}❤&f by dying from a mob!"       
+         
+   EVENT_DEATH_VICTIM_MOB_NO_DROP:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou died to a mob but didn't lose any hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou died to a mob but didn't lose any hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou died to a mob but didn't lose any hearts!"        
+
+   # Note: Shows when victim dies by a mob in a hardcore world (instant elimination).               
+   EVENT_DEATH_VICTIM_MOB_INSTANT_ELIMINATION:
+   # Placeholders: {0} = hearts 
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou were instantly eliminated by a mob!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou were instantly eliminated by a mob!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou were instantly eliminated by a mob!"  
+         
+   EVENT_DEATH_PLAYER_VS_MOB_BROADCAST:
+   # Placeholders: {0} = victim, {1} = victim hearts, {2} = mob
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &7(&c{1}❤&7) &fwas slain by a &c{2}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &7(&c{1}❤&7) &fwas slain by a &c{2}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &7(&c{1}❤&7) &fwas slain by a &c{2}&f!"
+         
+   EVENT_DEATH_VICTIM_OTHER:
+   # Placeholders: {0} = hearts 
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou lost &c{0}❤&f by dying!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou lost &c{0}❤&f by dying!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou lost &c{0}❤&f by dying!"
+         
+   EVENT_DEATH_VICTIM_OTHER_NO_DROP:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou died but didn't lose any hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou died but didn't lose any hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou died but didn't lose any hearts!"
+   
+   # Note: Shows when victim dies by other causes in a hardcore world (instant elimination).                     
+   EVENT_DEATH_VICTIM_OTHER_INSTANT_ELIMINATION:
+   # Placeholders: {0} = hearts 
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou were instantly eliminated by dying!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou were instantly eliminated by dying!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou were instantly eliminated by dying!"
+         
+   EVENT_DEATH_PLAYER_VS_OTHER_BROADCAST:
+   # Placeholders: {0} = victim, {1} = victim hearts, {2} = cause
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &7(&c{1}❤&7) &fdied due to &c{2}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &7(&c{1}❤&7) &fdied due to &c{2}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &7(&c{1}❤&7) &fdied due to &c{2}&f!" 
+         
+   EVENT_BAN_BROADCAST:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fhas been banned for losing all of their hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fhas been banned for losing all of their hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fhas been banned for losing all of their hearts!" 
+
+   ###############################
+   
+   EVENT_CONSUME_HEART_NOPERMISSION:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou do not have permission to use this item!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou do not have permission to use this item!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou do not have permission to use this item!"
+
+   EVENT_CONSUME_HEART_OVER_THRESHOLD:
+   # Placeholders: {0} = player hearts, {1} = threshold
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou cannot consume hearts when you already have &c{1}+&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou cannot consume hearts when you already have &c{1}+&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou cannot consume hearts when you already have &c{1}+&f!"
+         
+   EVENT_CONSUME_HEART_MAXHEARTS:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou already have maximum hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou already have maximum hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou already have maximum hearts!"
+         
+   EVENT_CONSUME_HEART_COOLDOWN:
+   # Placeholders: {0} = cooldown
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fWait for &c{0} &fbefore consuming a heart again!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fWait for &c{0} &fbefore consuming a heart again!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fWait for &c{0} &fbefore consuming a heart again!"     
+
+   EVENT_CONSUME_HEART_SUCCESS:
+   # Placeholders: {0} = heart tier, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fConsumed a {0} &fand gained &c{1} ❤&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fConsumed a {0} &fand gained &c{1} ❤&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fConsumed a {0} &fand gained &c{1} ❤&f!"
+         
+   ###############################
+   
+   EVENT_CONSUME_EFFECTHEART_NOPERMISSION:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou do not have permission to use this item!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou do not have permission to use this item!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou do not have permission to use this item!"
+
+   EVENT_CONSUME_EFFECTHEART_COOLDOWN:
+   # Placeholders: {0} = cooldown
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fWait for &c{0} &fbefore consuming this again!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fWait for &c{0} &fbefore consuming this again!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fWait for &c{0} &fbefore consuming this again!"    
+         
+   EVENT_CONSUME_EFFECTHEART_NOHEARTS:
+   # Placeholders: {0} = heart cost, {1} = available hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} hearts &fare required, you only have &c{1}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} hearts &fare required, you only have &c{1}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} hearts &fare required, you only have &c{1}&f!"
+
+   EVENT_CONSUME_EFFECTHEART_SUCCESS:
+   # Placeholders: {0} = heart tier
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fConsumed a {0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fConsumed a {0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fConsumed a {0}&f!"     
+         
+   ###############################
+ 
+   EVENT_BEACON_BREAK_BROKEN:
+   # Placeholders: {0} = player that broke beacon
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ""
+         - " {PREFIX} &f» &c{0} &fmanaged to break your beacon!"
+         - ""
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fmanaged to break your beacon!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fmanaged to break your beacon!"
+         
+   EVENT_BEACON_BREAK_NOTIFY:
+   # Placeholders: {0} = player that broke beacon, {1} = durability left
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ""
+         - " {PREFIX} &f» &c{0} &fdamaged your beacon, &c{1} hits &fleft!"
+         - ""
+      actionbar:
+         enabled: false
+         content: "{PREIFX} &f» &c{0} &fdamaged your beacon, &c{1} hits &fleft!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fdamaged your beacon, &c{1} hits &fleft!"   
+   
+   EVENT_BEACON_BREAK_BROADCAST:
+   # Placeholders: {0} = player being revived, {1} = player that broke beacon
+      chatMessage:
+         enabled: true
+         centered: true
+         content: 
+         - ""
+         - "<SOLID:ff3859>&l&nRESURRECTION FAILED!"
+         - ""
+         - "&4☠ &c{0}'s &7&orevive beacon was destroyed by &c{1}&7&o!"
+         - ""
+      actionbar:
+         enabled: false
+         content: ""
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: ""
+   
+   EVENT_CONSUME_BEACON_NOPERMISSION:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou do not have permission to use this item!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou do not have permission to use this item!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou do not have permission to use this item!"
+
+   EVENT_CONSUME_BEACON_LIQUIDNEARBY:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou cannot place revive beacons near liquids!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou cannot place revive beacons near liquids!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou cannot place revive beacons near liquids!"
+         
+   EVENT_CONSUME_BEACON_CANNOTPLACELIQUID:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou cannot place liquids near active beacons!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou cannot place liquids near active beacons!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou cannot place liquids near active beacons!"   
+         
+   EVENT_CONSUME_BEACON_NOTBOUND:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fBind the beacon to a player first! &7(&f/bind&7)"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fBind the beacon to a player first! &7(&f/bind&7)"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fBind the beacon to a player first! &7(&f/bind&7)"
+         
+   EVENT_CONSUME_BEACON_NOTDEAD:
+   # Placeholders: {0} = player bound to beacon
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fis not dead, you can't use this beacon!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fis not dead, you can't use this beacon!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fis not dead, you can't use this beacon!"   
+         
+   EVENT_CONSUME_BEACON_BEINGREVIVED:
+   # Placeholders: {0} = player being revived
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fis currently being revived by a beacon!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fis currently being revived by a beacon!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fis currently being revived by a beacon!"
+         
+   EVENT_CONSUME_BEACON_COOLDOWN:
+   # Placeholders: {0} = cooldown
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fWait for &c{0} &fbefore using a beacon again!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fWait for &c{0} &fbefore using a beacon again!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fWait for &c{0} &fbefore using a beacon again!"
+         
+   EVENT_CONSUME_BEACON_TOGGLED:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou cannot use revive beacons at this time!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou cannot use revive beacons at this time!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou cannot use revive beacons at this time!"   
+
+   EVENT_CONSUME_BEACON_SUCCESS:
+   # Placeholders: {0} = beacon tier, {1} = player being revived
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fInitiated resurrection process for &c{1}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fInitiated resurrection process for &c{1}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fInitiated resurrection process for &c{1}&f!"
+         
+   EVENT_CONSUME_BEACON_BROADCAST:
+   # Placeholders: {0} = player that placed beacon, {1} = world name, {2} = x, {3} = y, {4} = z
+      chatMessage:
+         enabled: true
+         centered: true
+         content: 
+         - ""
+         - "<SOLID:ff3859>&l&nRESURRECTION STARTED!"
+         - ""
+         - "&e☠ &7&oA revive beacon has been placed by&r &c{0}&7&o!"
+         - ""
+         - " &c&nLocation:&r &f{1} &7at &f{2}&7, &f{3}&7, &f{4}"
+         - ""
+      actionbar:
+         enabled: false
+         content: ""
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: ""      
+
+   EVENT_CONSUME_BEACON_BROADCAST_REVIVE:
+   # Placeholders: {0} = player being revived
+      chatMessage:
+         enabled: true
+         centered: true
+         content: 
+         - ""
+         - "<SOLID:ff3859>&l&nRESURRECTION FINISHED!"
+         - ""
+         - "&a☠ &c{0} &7&ohas risen from the dead!"
+         - ""
+      actionbar:
+         enabled: false
+         content: ""
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: ""               
+   
+   ###############################   
+
+   COMMAND_GIVEITEM_INVALIDSYNTAX:
+   # Placeholders: {0} = command
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fInvalid command syntax."
+         - ""
+         - " &c· &7Your command: &f{0}"
+         - " &c· &7Correct Syntax: &flifesteal giveitem [player] [item] [amount] <-s>"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fInvalid command syntax."
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fInvalid command syntax."
+         
+   COMMAND_GIVEITEM_PLAYEROFFLINE:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fis currently offline!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fis currently offline!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fis currently offline!"    
+         
+   COMMAND_GIVEITEM_WRONGITEM:
+   # Placeholders: {0} = item
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fInvalid item."
+         - ""
+         - " &c· &7Provided Item: &f{0}"
+         - " &c· &7Correct Syntax: &fAn item that exists."
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fInvalid item."
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fInvalid item."
+         
+   COMMAND_GIVEITEM_WRONGAMOUNT:
+   # Placeholders: {0} = amount
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fInvalid item amount."
+         - ""
+         - " &c· &7Provided Amount: &f{0}"
+         - " &c· &7Correct Syntax: &fA positive integer."
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fInvalid item amount."
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent:  "&fInvalid item amount." 
+
+   COMMAND_GIVEITEM_SUCCESS_SENDER:
+   # Placeholders: {0} = player, {1} = amount, {2} = type name
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fSuccessfully gave &cx{1} {2} &fto &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fSuccessfully gave &cx{1} {2} &fto &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent:  "&fSuccessfully gave &cx{1} {2} &fto &c{0}&f!"             
+         
+   COMMAND_GIVEITEM_SUCCESS_SENDER_ALL:
+   # Placeholders: {0} = player amount, {1} = amount, {2} = type name
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fSuccessfully gave &cx{1} {2} &fto &c{0} players&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fSuccessfully gave &cx{1} {2} &fto &c{0} players&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent:  "&fSuccessfully gave &cx{1} {2} &fto &c{0} players &f!"           
+         
+   COMMAND_GIVEITEM_SUCCESS_SENDER_SILENT:
+   # Placeholders: {0} = player, {1} = amount, {2} = type name
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fSuccessfully gave &cx{1} {2} &fto &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fSuccessfully gave &cx{1} {2} &fto &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent:  "&7[Silent] &fSuccessfully gave &cx{1} {2} &fto &c{0}&f!"  
+         
+   COMMAND_GIVEITEM_SUCCESS_SENDER_SILENT_ALL:
+   # Placeholders: {0} = player amount, {1} = amount, {2} = type name
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fSuccessfully gave &cx{1} {2} &fto &c{0} players&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fSuccessfully gave &cx{1} {2} &fto &c{0} players&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent:  "&7[Silent] &fSuccessfully gave &cx{1} {2} &fto &c{0} players&f!"           
+         
+   COMMAND_GIVEITEM_SUCCESS_RECEIVER:
+   # Placeholders: {0} = player, {1} = amount, {2} = type name
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fReceived &cx{1} {2} &ffrom &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fReceived &cx{1} {2} &ffrom &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent:  "&fReceived &cx{1} {2} &ffrom &c{0}&f!"      
+
+   ###############################
+
+   COMMAND_ADD_NO_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define a player!"
+         
+   COMMAND_ADD_NO_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define the amount of hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define the amount of hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define the amount of hearts!"
+         
+   COMMAND_ADD_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"    
+         
+   COMMAND_ADD_INVALID_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fThe amount of hearts must be a positive number!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fThe amount of hearts must be a positive number!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fThe amount of hearts must be a positive number!"     
+         
+   COMMAND_ADD_EXCEEDING_VALUE:
+   # Placeholders: {0} = player, {1} = current hearts, {2} = maximum hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fError. &c{0} &falready has &c{1} hearts &fand the cap is &c{2}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fError. &c{0} &falready has &c{1} hearts &fand the cap is &c{2}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fError. &c{0} &falready has &c{1} hearts &fand the cap is &c{2}&f!"  
+         
+   COMMAND_ADD_SUCCESS_SENDER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fAdded &c{1} hearts &fto &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fAdded &c{1} hearts &fto &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fAdded &c{1} hearts &fto &c{0}&f!"   
+         
+   COMMAND_ADD_SUCCESS_SENDER_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fAdded &c{1} hearts &fto &c{0} players&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fAdded &c{1} hearts &fto &c{0} players&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fAdded &c{1} hearts &fto &c{0} players&f!"          
+         
+   COMMAND_ADD_SUCCESS_SENDER_SILENT:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fAdded &c{1} hearts &fto &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fAdded &c{1} hearts &fto &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fAdded &c{1} hearts &fto &c{0}&f!"    
+  
+   COMMAND_ADD_SUCCESS_SENDER_SILENT_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fAdded &c{1} hearts &fto &c{0} players&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fAdded &c{1} hearts &fto &c{0} players&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fAdded &c{1} hearts &fto &c{0} players&f!"                
+         
+   COMMAND_ADD_SUCCESS_RECEIVER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fadded &c{1} hearts &fto you!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fadded &c{1} hearts &fto you!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fadded &c{1} hearts &fto you!"    
+         
+   ############################### 
+   
+   COMMAND_SET_NO_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define a player!"
+         
+   COMMAND_SET_NO_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define the amount of hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define the amount of hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define the amount of hearts!"
+         
+   COMMAND_SET_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"    
+         
+   COMMAND_SET_INVALID_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fThe amount of hearts must be a positive number!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fThe amount of hearts must be a positive number!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fThe amount of hearts must be a positive number!"  
+         
+   COMMAND_SET_EXCEEDING_VALUE:
+   # Placeholders: {0} = player, {1} = maximum hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fError. The heart cap for &c{0} &fis set at &c{1} hearts&f! You can increase the cap with the &csetmax &fcommand!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fError. The heart cap for &c{0} &fis set at &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fError. The heart cap for &c{0} &fis set at &c{1} hearts&f!"     
+         
+   COMMAND_SET_EXCEEDING_MIN_VALUE:
+   # Placeholders: {0} = player, {1} = minimum hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fBans are disabled! The minimum cap is set at &c{1} hearts&f!"       
+         
+   COMMAND_SET_SUCCESS_SENDER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fSet &c{0}'s &fhearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fSet &c{0}'s &fhearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fSet &c{0}'s &fhearts to &c{1} hearts&f!"
+         
+   COMMAND_SET_SUCCESS_SENDER_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fSet &c{0} players' &fhearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fSet &c{0} players' &fhearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fSet &c{0} players' &fhearts to &c{1} hearts&f!"         
+         
+   COMMAND_SET_SUCCESS_SENDER_SILENT:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fSet &c{0}'s &fhearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fSet &c{0}'s &fhearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fSet &c{0}'s &fhearts to &c{1} hearts&f!"
+         
+   COMMAND_SET_SUCCESS_SENDER_SILENT_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fSet &c{0} players' &fhearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fSet &c{0} players' &fhearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fSet &c{0} players' &fhearts to &c{1} hearts&f!"         
+         
+   COMMAND_SET_SUCCESS_RECEIVER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fset your hearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fset your hearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fset your hearts to &c{1} hearts&f!"         
+         
+   ############################### 
+   
+   COMMAND_SETMAX_NO_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define a player!"
+         
+   COMMAND_SETMAX_NO_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define the max amount of hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define the max amount of hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define the max amount of hearts!"
+         
+   COMMAND_SETMAX_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"    
+         
+   COMMAND_SETMAX_INVALID_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fThe amount of max hearts must be a positive number!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fThe amount of max hearts must be a positive number!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fThe amount of max hearts must be a positive number!"   
+         
+   COMMAND_SETMAX_EXCEEDING_MIN_VALUE:
+   # Placeholders: {0} = player, {1} = minimum hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fBans are disabled! The minimum cap is set at &c{1} hearts&f!"       
+         
+   COMMAND_SETMAX_SUCCESS_SENDER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fSet &c{0}'s &fmax hearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fSet &c{0}'s &fmax hearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fSet &c{0}'s &fmax hearts to &c{1} hearts&f!"
+         
+   COMMAND_SETMAX_SUCCESS_SENDER_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fSet &c{0} players' &fmax hearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fSet &c{0} players' &fmax hearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fSet &c{0} players' &fmax hearts to &c{1} hearts&f!"         
+         
+   COMMAND_SETMAX_SUCCESS_SENDER_SILENT:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fSet &c{0}'s &fmax hearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fSet &c{0}'s &fmax hearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fSet &c{0}'s &fmax hearts to &c{1} hearts&f!"
+         
+   COMMAND_SETMAX_SUCCESS_SENDER_SILENT_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fSet &c{0} players' &fmax hearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fSet &c{0} players' &fmax hearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fSet &c{0} players' &fmax hearts to &c{1} hearts&f!"         
+         
+   COMMAND_SETMAX_SUCCESS_RECEIVER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fset your max hearts to &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fset your max hearts to &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fset your max hearts to &c{1} hearts&f!"    
+         
+   ############################### 
+   
+   COMMAND_ADDMAX_NO_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define a player!"
+         
+   COMMAND_ADDMAX_NO_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define the additional max amount of hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define the additional max amount of hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define the additional max amount of hearts!"
+         
+   COMMAND_ADDMAX_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"    
+         
+   COMMAND_ADDMAX_INVALID_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fThe amount of additional max hearts must be a positive number!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fThe amount of additional max hearts must be a positive number!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fThe amount of max additional hearts must be a positive number!"   
+         
+   COMMAND_ADDMAX_EXCEEDING_MIN_VALUE:
+   # Placeholders: {0} = player, {1} = minimum hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fBans are disabled! The minimum cap is set at &c{1} hearts&f!"       
+         
+   COMMAND_ADDMAX_SUCCESS_SENDER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+         
+   COMMAND_ADDMAX_SUCCESS_SENDER_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"      
+         
+   COMMAND_ADDMAX_SUCCESS_SENDER_SILENT:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+         
+   COMMAND_ADDMAX_SUCCESS_SENDER_SILENT_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fIncreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+         
+   COMMAND_ADDMAX_SUCCESS_RECEIVER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fincreased your max hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fincreased your max hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fincreased your max hearts cap by &c{1} hearts&f!"     
+         
+   ############################### 
+   
+   COMMAND_REMMAX_NO_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define a player!"
+         
+   COMMAND_REMMAX_NO_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define the lowered max amount of hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define the lowered max amount of hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define the lowered max amount of hearts!"
+         
+   COMMAND_REMMAX_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"    
+         
+   COMMAND_REMMAX_INVALID_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fThe amount of less max hearts must be a positive number!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fThe amount of less max hearts must be a positive number!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fThe amount of max less hearts must be a positive number!"   
+         
+   COMMAND_REMMAX_EXCEEDING_MIN_VALUE:
+   # Placeholders: {0} = player, {1} = minimum hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fBans are disabled! The minimum cap is set at &c{1} hearts&f!"       
+         
+   COMMAND_REMMAX_SUCCESS_SENDER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+         
+   COMMAND_REMMAX_SUCCESS_SENDER_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"      
+         
+   COMMAND_REMMAX_SUCCESS_SENDER_SILENT:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+         
+   COMMAND_REMMAX_SUCCESS_SENDER_SILENT_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fDecreased &c{0}'s &fmax hearts cap by &c{1} hearts&f!"
+         
+   COMMAND_REMMAX_SUCCESS_RECEIVER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fdecreased your max hearts cap by &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fdecreased your max hearts cap by &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fdecreased your max hearts cap by &c{1} hearts&f!"                  
+         
+   ###############################    
+   
+   COMMAND_REMOVE_NO_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define a player!"
+         
+   COMMAND_REMOVE_NO_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define the amount of hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define the amount of hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define the amount of hearts!"
+         
+   COMMAND_REMOVE_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"    
+         
+   COMMAND_REMOVE_INVALID_VALUE:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fThe amount of hearts must be a positive number!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fThe amount of hearts must be a positive number!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fThe amount of hearts must be a positive number!"  
+         
+   COMMAND_REMOVE_EXCEEDING_VALUE:
+   # Placeholders: {0} = player, {1} = current hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fError. &c{0} &fhas only &c{1} hearts &fleft!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fError. &c{0} &fhas only &c{1} hearts &fleft!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fError. &c{0} &fhas only &c{1} hearts &fleft!"
+         
+   COMMAND_REMOVE_EXCEEDING_MIN_VALUE:
+   # Placeholders: {0} = player, {1} = current hearts, {2} = minimum hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{2} hearts&f and &c{0} &fhas only &c{1} hearts&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fBans are disabled! The minimum cap is set at &c{2} hearts&f and &c{0} &fhas only &c{1} hearts&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fBans are disabled! The minimum cap is set at &c{2} hearts&f and &c{0} &fhas only &c{1} hearts&f!" 
+         
+   COMMAND_REMOVE_SUCCESS_SENDER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fRemoved &c{1} hearts &ffrom &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fRemoved &c{1} hearts &ffrom &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fRemoved &c{1} hearts &ffrom &c{0}&f!"
+         
+   COMMAND_REMOVE_SUCCESS_SENDER_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fRemoved &c{1} hearts &ffrom &c{0}&f players!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fRemoved &c{1} hearts &ffrom &c{0}&f players!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fRemoved &c{1} hearts &ffrom &c{0}&f players!"         
+        
+   COMMAND_REMOVE_SUCCESS_SENDER_SILENT:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fRemoved &c{1} hearts &ffrom &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fRemoved &c{1} hearts &ffrom &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fRemoved &c{1} hearts &ffrom &c{0}&f!"  
+     
+   COMMAND_REMOVE_SUCCESS_SENDER_SILENT_ALL:
+   # Placeholders: {0} = player amount, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fRemoved &c{1} hearts &ffrom &c{0} players&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fRemoved &c{1} hearts &ffrom &c{0} players&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fRemoved &c{1} hearts &ffrom &c{0} players&f!"          
+         
+   COMMAND_REMOVE_SUCCESS_RECEIVER:
+   # Placeholders: {0} = player, {1} = hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fremoved &c{1} heart(s) &ffrom you!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fremoved &c{1} heart(s) &ffrom you!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fremoved &c{1} heart(s) &ffrom you!"             
+         
+ ############################### 
+
+   COMMAND_ELIMINATE_BANS_DISABLED:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou cannot use this command, bans are disabled!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou cannot use this command, bans are disabled!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou cannot use this command, bans are disabled!"
+   
+   COMMAND_ELIMINATE_NO_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define a player!"
+
+   COMMAND_ELIMINATE_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"     
+         
+   COMMAND_ELIMINATE_ALREADY_ELIMINATED:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fis already eliminated!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fis already eliminated!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fis already eliminated!"              
+         
+   COMMAND_ELIMINATE_SUCCESS_SENDER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou have manually eliminated &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou have manually eliminated &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou have manually eliminated &c{0}&f!"
+         
+   COMMAND_ELIMINATE_SUCCESS_SENDER_ALL:
+   # Placeholders: {0} = player amount
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou have manually eliminated &c{0} players&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou have manually eliminated &c{0} players&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou have manually eliminated &c{0} players&f!"         
+         
+   COMMAND_ELIMINATE_SUCCESS_SENDER_SILENT:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fYou have manually eliminated &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fYou have manually eliminated &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fYou have manually eliminated &c{0}&f!"        
+         
+   COMMAND_ELIMINATE_SUCCESS_SENDER_SILENT_ALL:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fYou have manually eliminated &c{0} players&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fYou have manually eliminated &c{0} players&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fYou have manually eliminated &c{0} players&f!"           
+         
+   COMMAND_ELIMINATE_SUCCESS_RECEIVER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou were manually eliminated by &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou were manually eliminated by &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou were manually eliminated by &c{0}&f!"   
+         
+ ############################### 
+   
+   COMMAND_REVIVE_NO_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define a player!"
+
+   COMMAND_REVIVE_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"     
+         
+   COMMAND_REVIVE_ALREADY_REVIVED:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fis already alive!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fis already alive!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fis already alive!"              
+         
+   COMMAND_REVIVE_SUCCESS_SENDER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou have manually revived &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou have manually revived &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou have manually revived &c{0}&f!"
+         
+   COMMAND_REVIVE_SUCCESS_SENDER_ALL:
+   # Placeholders: {0} = player amount
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou have manually revived &c{0} players&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou have manually revived &c{0} players&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou have manually revived &c{0} players&f!"         
+         
+   COMMAND_REVIVE_SUCCESS_SENDER_SILENT:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fYou have manually revived &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fYou have manually revived &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fYou have manually revived &c{0}&f!"      
+         
+   COMMAND_REVIVE_SUCCESS_SENDER_SILENT_ALL:
+   # Placeholders: {0} = player amount
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &7[Silent] &fYou have manually revived &c{0} players&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[Silent] &fYou have manually revived &c{0} players&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&7[Silent] &fYou have manually revived &c{0} players&f!"            
+         
+ ############################### 
+   
+   COMMAND_STATUS_NO_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define a player!"
+
+   COMMAND_STATUS_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"                
+         
+   COMMAND_STATUS_SUCCESS_SENDER:
+   # Placeholders: {0} = player, {1} = is eliminated, {2} = ban time left, {3} = hearts, {4} = heart cap
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ""
+         - " {PREFIX} &f» &fViewing profile for &c{0}&f:"
+         - ""
+         - " &c· &7Eliminated: &f{1}"
+         - " &c· &7Ban Time: &f{2}"
+         - " &c· &7Hearts: &f{3}&7/&f{4} hearts"
+         - ""
+      actionbar:
+         enabled: false
+         content: ""
+      titles:
+         enabled: false
+         titleContent: "" 
+         subtitleContent: ""  
+
+ ############################### 
+   
+   COMMAND_MANUALKILL_NO_KILLER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define the killer (online player)!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define the killer (online player)!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define the killer (online player)!"
+         
+   COMMAND_MANUALKILL_NO_VICTIM:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define the victim (online player)!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define the victim (online player)!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define the victim (online player)!"         
+         
+   COMMAND_MANUALKILL_SUCCESS:
+   # Placeholders: {0} = victim, {1} = killer
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fManually triggered kill for &c{0} &fby &c{1}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fManually triggered kill for &c{0} &fby &c{1}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fManually triggered kill for &c{0} &fby &c{1}&f!"
+   
+ ############################### 
+
+   COMMAND_TOGGLEREVIVES_NO_INPUT:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must define true or false!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must define true or false!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must define true or false!"
+
+   COMMAND_TOGGLEREVIVES_INVALID_INPUT:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYour input is invalid, choose from &ctrue &for &cfalse&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYour input is invalid, choose from &ctrue &for &cfalse&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYour input is invalid, choose from &ctrue &for &cfalse&f!"            
+         
+   COMMAND_TOGGLEREVIVES_ENABLED:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou have &aenabled &frevive beacons!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou have &aenabled &frevive beacons!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou have &aenabled &frevive beacons!"
+          
+   COMMAND_TOGGLEREVIVES_DISABLED:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou have &cdisabled &frevive beacons!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou have &cdisabled &frevive beacons!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou have &cdisabled &frevive beacons!"
+         
+   ############################### 
+   
+   COMMAND_SEARCH_FINISH:
+   # Placeholders: {0} = keyword, {1} = total files, {2} = total lines, {3} = total items found, {4} = ms to complete, {5} = output
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &7» &fSearched logs for &7"&c{0}&7"&f. &7(&c&o{4}ms&r&7)'
+         - ''
+         - ' &fIterated &cx{1} files&f, with a total of &cx{2} lines&f.'
+         - ' &fFound &c{3} matching items&f!' 
+         - ''
+         - ' &fOutput Generated: &c{5}'
+         - ''
+      actionbar:
+         enabled: false
+         content: '{PREFIX} &7» &fIterated &cx{1} files&f, with a total of &cx{2} lines&f. Found &c{3} matching items&f!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fIterated &cx{1} files&f, with a total of &cx{2} lines&f. Found &c{3} matching items&f!'
+         
+   COMMAND_SEARCH_FAIL_NO_INPUT:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &7» &fCould not execute search. Define a keyword!'
+         - ''
+         - ' &7&nExample:&r &c/lsc search N0RSKA'
+         - ''
+      actionbar:
+         enabled: false
+         content: '{PREFIX} &7» &fCould not execute search. Define a keyword!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fCould not execute search. Define a keyword!'     
+         
+   ############################### 
+   
+   PLAYERCOMMAND_MENU:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ""
+         - " {PREFIX} &f» &7Menu:"
+         - ""
+         - " &7• &f/lifesteal revive [player] &c(Requires 10 hearts)"
+         - " &7• &f/lifesteal check [player] &c(View someone's stats)"
+         - ""
+      actionbar:
+         enabled: false
+         content: ""
+      titles:
+         enabled: false
+         titleContent: "" 
+         subtitleContent: ""    
+         
+   ############################### 
+
+   PLAYERCOMMAND_CHECK_NO_PERMISSION:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou do not have permission!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou do not have permission!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou do not have permission!"  
+         
+   PLAYERCOMMAND_CHECK_UNDEFINED_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou need to define a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou need to define a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou need to define a player!"  
+            
+   PLAYERCOMMAND_CHECK_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"   
+         
+   PLAYERCOMMAND_CHECK_SUCCESS:
+   # Placeholders: {0} = player, {1} = is eliminated, {2} = ban time left, {3} = hearts, {4} = hearts cap
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ""
+         - " {PREFIX} &f» &fViewing profile for &c{0}&f:"
+         - ""
+         - " &c· &7Eliminated: &f{1}"
+         - " &c· &7Ban Time: &f{2}"
+         - " &c· &7Hearts: &f{3}&7/&f{4} hearts"
+         - ""
+      actionbar:
+         enabled: false
+         content: ""
+      titles:
+         enabled: false
+         titleContent: "" 
+         subtitleContent: ""                            
+
+   ###############################
+ 
+   PLAYERCOMMAND_REVIVE_NO_PERMISSION:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou do not have permission!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou do not have permission!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou do not have permission!"      
+         
+   PLAYERCOMMAND_REVIVE_COOLDOWN:
+   # Placeholders: {0} = cooldown
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou can use this command again in &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou can use this command again in &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou can use this command again in &c{0}&f!"                
+          
+   PLAYERCOMMAND_REVIVE_UNDEFINED_PLAYER:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou need to define a player to revive!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou need to define a player to revive!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou need to define a player to revive!"     
+         
+   PLAYERCOMMAND_REVIVE_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"  
+         
+   PLAYERCOMMAND_REVIVE_NOT_ELIMINATED:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fis not eliminated!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fis not eliminated!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fis not eliminated!"  
+         
+   PLAYERCOMMAND_REVIVE_BEINGREVIVED:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fis currently being revived by a beacon!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fis currently being revived by a beacon!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fis currently being revived by a beacon!"         
+         
+   PLAYERCOMMAND_REVIVE_LOW_HEARTS:
+   # Placeholders: {0} = player, {1} = current hearts, {2} = required hearts
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fCould not revive &c{0}&f! Revives require &c{2} hearts &fbut you only have &c{1} hearts!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fCould not revive &c{0}&f! Revives require &c{2} hearts &fbut you only have &c{1} hearts!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fCould not revive &c{0}&f! Revives require &c{2} hearts &fbut you only have &c{1} hearts!"  
+         
+   PLAYERCOMMAND_REVIVE_SUCCESS:
+   # Placeholders: {0} = player, {1} = hearts sacrificed
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou sacrificed &c{1} hearts &fto revive &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou sacrificed &c{1} hearts &fto revive &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou sacrificed &c{1} hearts &fto revive &c{0}&f!"
+         
+   PLAYERCOMMAND_REVIVE_SUCCESS_BROADCAST:
+   # Placeholders: {0} = player, {1} = revived player, {2} = hearts sacrificed
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fsacrificed &c{2} hearts &fto revive &c{1}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fsacrificed &c{2} hearts &fto revive &c{1}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fsacrificed &c{2} hearts &fto revive &c{1}&f!"             
+          
+ ############################### 
+   
+   COMMAND_BIND_NOPERMISSION:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou do not have permission!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou do not have permission!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou do not have permission!"
+
+   COMMAND_BIND_NO_BEACON:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fYou must be holding a revive beacon when using this command!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou must be holding a revive beacon when using this command!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fYou must be holding a revive beacon when using this command!"         
+         
+   COMMAND_BIND_ALREADY_BOUND:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fThis beacon is already bound to a player!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fThis beacon is already bound to a player!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fThis beacon is already bound to a player!"  
+         
+   COMMAND_BIND_INVALID_PLAYER:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &c{0} &fcould not be found!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &c{0} &fcould not be found!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&c{0} &fcould not be found!"    
+         
+   COMMAND_BIND_INVALID_SYNTAX:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fCommand syntax is wrong. &7(&f/bind [player]&7)"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fCommand syntax is wrong. &7(&f/bind [player]&7)"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fCommand syntax is wrong. &7(&f/bind [player]&7)"     
+         
+   COMMAND_BIND_SUCCESS:
+   # Placeholders: {0} = player
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - " {PREFIX} &f» &fBound this beacon to &c{0}&f!"
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fBound this beacon to &c{0}&f!"
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: "&fBound this beacon to &c{0}&f!"         
+         
+   ###############################             
+           
+   COMMAND_RELOAD:
+   # Placeholders: {0} = ms
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ""
+         - " {PREFIX} &f» &fReloaded configuration files. &7(&f{0}ms&7)"
+         - ""
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fReloaded configuration files. &7(&f{0}ms&7)" 
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: '&fReloaded configuration!'
+         
+   COMMAND_NOPERMISSION:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fYou do not have permission to run this command!'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou do not have permission to run this command!"       
+      titles:
+         enabled: false
+         titleContent: "{PREFIX}" 
+         subtitleContent: '&fYou do not have permission!'   
+         

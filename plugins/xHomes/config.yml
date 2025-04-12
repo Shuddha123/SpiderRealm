@@ -1,0 +1,19 @@
+options:
+  prefix: '&a&lxHomes'
+  color1: '&a'
+  color2: '&e'
+  color3: '&e'
+
+permissions:
+  home.default:
+    max-homes: 2
+  home.vip:
+    max-homes: 4
+  home.legend:
+    max-homes: 6
+  home.hero:
+    max-homes: 8
+  home.king:
+    max-homes: 10
+  home.immortal:
+    max-homes: 14
