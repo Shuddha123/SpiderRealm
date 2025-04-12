@@ -1,0 +1,7 @@
+Name: Spawner Key
+Virtual: false
+Item:
+  Material: PURPLE_CANDLE
+  Name: '#3E3E3E&lѕ#3E3E3E&lᴘ#3E3E3E&lᴀ#3E3E3E&lᴡ#3E3E3E&lɴ#3E3E3E&lᴇ#3E3E3E&lʀ #3E3E3E&lᴋ#3E3E3E&lᴇ#3E3E3E&lʏ'
+  Enchants:
+    mending: 1

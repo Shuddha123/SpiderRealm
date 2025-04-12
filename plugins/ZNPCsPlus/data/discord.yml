@@ -1,0 +1,26 @@
+id: discord
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: 64b160e1-a582-4c14-af86-2be023ba21ee
+world: world
+location:
+  x: 197.39921728835864
+  y: 250.0
+  z: 922.1953596910192
+  yaw: -179.09865
+  pitch: 14.700024
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#610ffb&lD&#660efc&lI&#6a0dfc&lS&#6f0dfd&lC&#740cfe&lO&#780bfe&lR&#7d0aff&lD'
+actions:
+- lol.pyr.znpcsplus.interaction.playercommand.PlayerCommandAction;ZGlzY29yZA==;0;ANY_CLICK;0

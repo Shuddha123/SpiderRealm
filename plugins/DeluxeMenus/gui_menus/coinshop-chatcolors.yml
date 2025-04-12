@@ -1,0 +1,382 @@
+size: 45
+menu_title: 'Chat Colors'
+
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-44]
+
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    data: 1
+    slot: 40
+    hide_effects: true
+    display_name: "&cGo Back"
+
+    click_commands:
+      - '[openmenu] coinshop'
+
+  'red':
+    material: RED_DYE
+    data: 1
+    slot: 10
+    display_name: "&c&lRed Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.red'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fRed &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'gold':
+    material: ORANGE_DYE
+    data: 1
+    slot: 11
+    display_name: "&6&lGold Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.gold'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fGold &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'yellow':
+    material: YELLOW_DYE
+    data: 1
+    slot: 12
+    display_name: "&e&lYellow Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.yellow'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fYellow &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'lime':
+    material: LIME_DYE
+    data: 1
+    slot: 13
+    display_name: "&a&lLime Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.lime'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fLime &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'green':
+    material: GREEN_DYE
+    data: 1
+    slot: 14
+    display_name: "&2&lGreen Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.green'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fGreen &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'cyan':
+    material: CYAN_DYE
+    data: 1
+    slot: 15
+    display_name: "&3&lCyan Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.cyan'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fCyan &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'aqua':
+    material: LIGHT_BLUE_DYE
+    data: 1
+    slot: 16
+    display_name: "&3&lAqua Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.aqua'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fAqua &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'blue':
+    material: BLUE_DYE
+    data: 1
+    slot: 20
+    display_name: "&1&lBlue Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.blue'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fBlue &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'pink':
+    material: PINK_DYE
+    data: 1
+    slot: 21
+    display_name: "&d&lPink Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.pink'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fPink &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'purple':
+    material: PURPLE_DYE
+    data: 1
+    slot: 22
+    display_name: "&5&lPurple Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.purple'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fPurple &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'dark-gray':
+    material: GRAY_DYE
+    data: 1
+    slot: 23
+    display_name: "&8&lDark Gray Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.darkgray'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fDark Gray &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'gray':
+    material: LIGHT_GRAY_DYE
+    data: 1
+    slot: 24
+    display_name: "&7&lGray Chat Color"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &6650 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[givepermission] ezcolors.color.gray'
+      - '[console] points take %player_name% 650'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought the &fGray &#7AFE77chat colour!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f650 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+

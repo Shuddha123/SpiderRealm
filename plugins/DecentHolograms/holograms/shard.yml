@@ -1,0 +1,141 @@
+location: world:144.500:242.000:898.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: Amethyst_Shard !ENCHANTED'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#8000FF&lMOST SHARDS&r &8- #8000FF&lALL TIME&r'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#8000FF&l#1 &7%ajlb_lb_coinsengine_balance_raw_shards_1_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_1_alltime_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#2 &7%ajlb_lb_coinsengine_balance_raw_shards_2_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_2_alltime_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#3 &7%ajlb_lb_coinsengine_balance_raw_shards_3_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_3_alltime_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#4 &7%ajlb_lb_coinsengine_balance_raw_shards_4_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_4_alltime_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#5 &7%ajlb_lb_coinsengine_balance_raw_shards_5_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_5_alltime_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#6 &7%ajlb_lb_coinsengine_balance_raw_shards_6_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_6_alltime_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#7 &7%ajlb_lb_coinsengine_balance_raw_shards_7_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_7_alltime_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#8 &7%ajlb_lb_coinsengine_balance_raw_shards_8_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_8_alltime_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#9 &7%ajlb_lb_coinsengine_balance_raw_shards_9_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_9_alltime_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#10 &7%ajlb_lb_coinsengine_balance_raw_shards_10_alltime_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_10_alltime_value_formatted%'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7ʏᴏᴜʀ sʜᴀʀᴅs&8: #8000FF%ajlb_value_coinsengine_balance_raw_shards_alltime_formatted%'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#8000FF&lClick to Toggle!'
+    height: 0.3
+  - content: '#8000FF&lALL TIME&r &8- &7Monthly&r &8- &7Weekly'
+    height: 0.3
+  actions:
+    LEFT:
+    - NEXT_PAGE
+    RIGHT:
+    - NEXT_PAGE
+- lines:
+  - content: '#ICON: Amethyst_Shard !ENCHANTED'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#8000FF&LMOST SHARDS&r &8- #8000FF&lMONTHLY&r'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#8000FF#1 &7%ajlb_lb_coinsengine_balance_raw_shards_1_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_1_monthly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#2 &7%ajlb_lb_coinsengine_balance_raw_shards_2_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_2_monthly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#3 &7%ajlb_lb_coinsengine_balance_raw_shards_3_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_3_monthly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#4 &7%ajlb_lb_coinsengine_balance_raw_shards_4_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_4_monthly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#5 &7%ajlb_lb_coinsengine_balance_raw_shards_5_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_5_monthly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#6 &7%ajlb_lb_coinsengine_balance_raw_shards_6_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_6_monthly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#7 &7%ajlb_lb_coinsengine_balance_raw_shards_7_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_7_monthly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#8 &7%ajlb_lb_coinsengine_balance_raw_shards_8_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_8_monthly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#9 &7%ajlb_lb_coinsengine_balance_raw_shards_9_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_9_monthly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#10 &7%ajlb_lb_coinsengine_balance_raw_shards_10_monthly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_10_monthly_value_formatted%'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7ʏᴏᴜʀ sʜᴀʀᴅs&8: #8000FF%ajlb_value_coinsengine_balance_raw_shards_alltime_formatted%'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#8000FF&lClick to Toggle!'
+    height: 0.3
+  - content: '&7Alltime&r &8- #8000FF&lMONTHLY&r &8- &7Weekly'
+    height: 0.3
+  actions:
+    LEFT:
+    - NEXT_PAGE
+    RIGHT:
+    - NEXT_PAGE
+- lines:
+  - content: '#ICON: Amethyst_Shard !ENCHANTED'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#8000FF&LMOST SHARDS&r &8- #8000FF&LWEEKLY&r'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#8000FF#1 &7%ajlb_lb_coinsengine_balance_raw_shards_1_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_1_weekly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#2 &7%ajlb_lb_coinsengine_balance_raw_shards_2_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_2_weekly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#3 &7%ajlb_lb_coinsengine_balance_raw_shards_3_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_3_weekly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#4 &7%ajlb_lb_coinsengine_balance_raw_shards_4_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_4_weekly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#5 &7%ajlb_lb_coinsengine_balance_raw_shards_5_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_5_weekly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#6 &7%ajlb_lb_coinsengine_balance_raw_shards_6_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_6_weekly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#7 &7%ajlb_lb_coinsengine_balance_raw_shards_7_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_7_weekly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#8 &7%ajlb_lb_coinsengine_balance_raw_shards_8_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_8_weekly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#9 &7%ajlb_lb_coinsengine_balance_raw_shards_9_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_9_weekly_value_formatted%'
+    height: 0.3
+  - content: '#8000FF#10 &7%ajlb_lb_coinsengine_balance_raw_shards_10_weekly_name% &8| #8000FF%ajlb_lb_coinsengine_balance_raw_shards_10_weekly_value_formatted%'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7ʏᴏᴜʀ sʜᴀʀᴅs&8: #8000FF%ajlb_value_coinsengine_balance_raw_shards_alltime_formatted%'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '#8000FF&lClick to Toggle!'
+    height: 0.3
+  - content: '&7Alltime&r &8- &7Monthly&r &8- #8000FF&lWEEKLY&r'
+    height: 0.3
+  actions:
+    LEFT:
+    - PAGE:leaderboardshards:1
+    RIGHT:
+    - PAGE:leaderboardshards:1
+

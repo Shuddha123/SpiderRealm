@@ -1,0 +1,65 @@
+open_command: spawners
+register_command: false
+size: 27
+menu_title: 'Spawners'
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-26]
+
+  'info':
+    material: SPAWNER
+    slot: 11
+    display_name: "&#FF7F52&lWhat are Mob Spawners?"
+    lore:
+      - "&8Mob Spawner Info"
+      - ""
+      - "&fMob spawners will spawn the specific mob"
+      - "&faround them. They can be used to make XP"
+      - "&ffarms & more!"
+      - ""
+      - "&fSpawners can be mined with a silk touch"
+      - "&fpickaxe to be placed elsewhere!"
+      - ""
+
+  'shop':
+    material: EMERALD
+    slot: 13
+    display_name: "&#FF7F52&lSpawner Shop"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - "&8Mob Spawner Info"
+      - ""
+      - "&fSpawners can also be bought from the"
+      - "&fSpawner Shop."
+      - ""
+      - "&#52FF5A➥ &lCLICK TO OPEN SHOP"
+      - ""
+    click_commands:
+      - '[player] spawnershop'
+
+  'upgrades':
+    material: NETHER_STAR
+    slot: 15
+    display_name: "&#FF7F52&lSpawner Upgrades"
+    lore:
+      - "&8Mob Spawner Info"
+      - ""
+      - "&fSpawners can be upgraded by right-clicking"
+      - "&fon them to show the upgrade menu."
+      - ""
+      - "&#FF7F52Available Upgrades:"
+      - "&f• Range &7- Increases the range that the"
+      - "&7             spawner is activated from"
+      - "&f• Delay &7- Decreases the delay between"
+      - "&7            each spawn wave"
+      - "&f• Amount &7- Increases the amount of mobs"
+      - "&7              that spawn in each wave"
+      - ""
+      

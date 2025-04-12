@@ -1,0 +1,25 @@
+id: tutorail
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: f24ae6b4-77fa-473c-908c-815bb1081c20
+world: world
+location:
+  x: 204.40485465477866
+  y: 250.0
+  z: 886.6026948740148
+  yaw: 0.43701172
+  pitch: 1.1999853
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#fb0000&lT&#fc1010&lu&#fc2121&lt&#fd3131&lo&#fd4242&lr&#fe5252&la&#fe6363&li&#ff7373&ll'
+actions: []

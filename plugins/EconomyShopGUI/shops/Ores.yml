@@ -1,0 +1,68 @@
+pages:
+  page1:
+    gui-rows: 3
+    items:
+      '1':
+        material: STONE
+        buy: -1.0
+        sell: 3.0
+        slot: 11
+      '2':
+        material: DIORITE
+        buy: -1.0
+        sell: 3.0
+        slot: 12
+      '3':
+        material: ANDESITE
+        buy: -1.0
+        sell: 3.0
+        slot: 13
+      '4':
+        material: NETHERITE_INGOT
+        buy: -1.0
+        sell: 150.0
+        slot: 14
+      '5':
+        material: DIAMOND
+        buy: -1.0
+        sell: 100.0
+        slot: 15
+      '6':
+        material: EMERALD
+        buy: -1.0
+        sell: 30.0
+        slot: 16
+      '7':
+        material: GOLD_INGOT
+        buy: -1.0
+        sell: 20.0
+        slot: 17
+  page2:
+    gui-rows: 3
+    items:
+      '1':
+        material: IRON_INGOT
+        buy: -1.0
+        sell: 6.1
+        slot: 12
+      '2':
+        material: REDSTONE
+        buy: -1.0
+        sell: 3.2
+        slot: 13
+      '3':
+        material: LAPIS_LAZULI
+        buy: -1.0
+        sell: 3.0
+        stack-size: 16
+        slot: 14
+      '4':
+        material: COAL
+        buy: -1.0
+        sell: 1.0
+        slot: 15
+      '5':
+        material: COPPER_INGOT
+        buy: -1.0
+        sell: 5.0
+        slot: 16

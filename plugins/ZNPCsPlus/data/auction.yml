@@ -1,0 +1,27 @@
+id: auction
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: d8ce1232-e154-492b-82af-249ed6210d75
+world: world
+location:
+  x: 194.57827346509094
+  y: 250.0
+  z: 899.4436320712962
+  yaw: -93.458984
+  pitch: 3.899992
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#fb0000&lA&#fb1600&lu&#fc2b00&lc&#fc4100&lt&#fc5600&li&#fd6c00&lo&#fd8100&ln
+    &#fe9700&lH&#feac00&lo&#fec200&lu&#ffd700&ls&#ffed00&le'
+actions:
+- lol.pyr.znpcsplus.interaction.playercommand.PlayerCommandAction;YWg=;0;ANY_CLICK;0

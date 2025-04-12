@@ -1,0 +1,26 @@
+id: lottery
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: afdf36d0-faa6-4908-920d-2d2cdf9db047
+world: world
+location:
+  x: 196.70633209138478
+  y: 250.0
+  z: 886.5955915329343
+  yaw: -1.2133789
+  pitch: -1.0500083
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#0012fb&lL&#2b0fef&lo&#550ce2&lt&#8009d6&lt&#aa06c9&le&#d503bd&lr&#ff00b0&ly'
+actions:
+- lol.pyr.znpcsplus.interaction.playercommand.PlayerCommandAction;bG90dGVyeSBndWk=;0;ANY_CLICK;0

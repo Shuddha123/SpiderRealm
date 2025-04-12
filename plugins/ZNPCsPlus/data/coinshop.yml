@@ -1,0 +1,26 @@
+id: coinshop
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: f1ccc306-6325-4f34-9e9d-c891d32f5600
+world: world
+location:
+  x: 195.77304489124967
+  y: 250.0
+  z: 895.5279649740421
+  yaw: -92.259155
+  pitch: 1.3499928
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#fbe900&lC&#fce202&lO&#fcda04&lI&#fdd306&lN&#fdcb09&lS&#fec40b&lH&#febc0d&lO&#ffb50f&lP'
+actions:
+- lol.pyr.znpcsplus.interaction.playercommand.PlayerCommandAction;Y29pbnNob3A=;0;ANY_CLICK;0

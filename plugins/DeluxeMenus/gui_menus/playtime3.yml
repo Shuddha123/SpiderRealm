@@ -1,0 +1,1535 @@
+open_command: playtime3
+size: 54
+menu_title: 'Playtime Levels [3/3]'
+
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: playtimelevels.open
+      deny_commands:
+        - "[message] &cYou don't have permission to use playtime levels!"
+
+items:
+
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: "&0"
+    data: 1
+    slots: [0-53]
+
+  'statistics':
+    material: head-%player_name%
+    slot: 40
+    display_name: "&#51F1FF&lPlaytime Levels"
+    lore:
+      - ""
+      - "&#51F1FFInformation:"
+      - "&8&l| &7Playtime levels are achieveable tiers where"
+      - "&8&l| &7you can get rewards by just playing! (or afking)"
+      - "&8&l| &7The more you play the more in—game rewards"
+      - "&8&l| &7you will receive!"
+      - ""
+      - "&#51F1FFStatistics:"
+      - "&8&l| &fLevel: &#80FF86%statistic_time_played%"
+      - "&8&l| &fPlaytime: &#80FF86%statistic_hours_played%h %statistic_time_played:minutes%m"
+
+  'prev':
+    material: RED_CANDLE
+    slot: 39
+    display_name: "&7[←] &cPrevious Page"
+    lore:
+      - ""
+      - "&8&l| &fHead to the previous page to"
+      - "&8&l| &fobtain more rewards!"
+      - ""
+      - "&#fcfc54&l➥ CONTINUE"
+
+    click_commands:
+      - '[openguimenu] playtime2'
+
+  'next':
+    material: LIME_CANDLE
+    slot: 41
+    display_name: "&7[→] &aNext Page"
+    lore:
+      - ""
+      - "&8&l| &fHead to the next page to"
+      - "&8&l| &fobtain more rewards!"
+      - ""
+      - "&#FF3B3B&l✖ FINAL PAGE"
+
+# ----------- # ----------- # ----------- # ----------- # ----------- # ----------- #
+
+
+  # -- #   LEVEL 43   # -- #
+  'level-43':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2M0ZDdhM2JjM2RlODMzZDMwMzJlODVhMGJmNmYyYmVmNzY4Nzg2MmIzYzZiYzQwY2U3MzEwNjRmNjE1ZGQ5ZCJ9fX0=
+    slot: 10
+    priority: 2
+    display_name: "&#cf4242&lLevel 43"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f416 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$15,000"
+      - "&8&l| &f140 Coins"
+      - "&8&l| &f185 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '416'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.43'
+
+      - '[console] lifestealcore add %player_name% 3'
+      - '[console] eco give %player_name% 15000'
+      - '[console] points give %player_name% 140'
+      - '[giveexp] 185'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 43! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-43':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 10
+    priority: 1
+    display_name: "&#cf4242&lLevel 43"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.43' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f416 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$15,000"
+      - "&8&l| &f140 Coins"
+      - "&8&l| &f185 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 44   # -- #
+  'level-44':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTMzMzBmYmVkMzc3YzI0NGY0ODdlNGJjNTY4MmQxNWFmNDBkM2NlNGMzMmVlMDNmYzI0YTdmOTUyZTdkMjlhOSJ9fX0=
+    slot: 11
+    priority: 2
+    display_name: "&#f1b13e&lLevel 44"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f428 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$12,500"
+      - "&8&l| &f150 Coins"
+      - "&8&l| &f190 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '428'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.44'
+
+      - '[console] lifestealcore add %player_name% 1'
+      - '[console] eco give %player_name% 12500'
+      - '[console] points give %player_name% 150'
+      - '[giveexp] 190'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 44! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-44':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 11
+    priority: 1
+    display_name: "&#f1b13e&lLevel 44"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.44' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f428 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$12,500"
+      - "&8&l| &f150 Coins"
+      - "&8&l| &f190 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 45   # -- #
+  'level-45':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlhMDMwY2EyYjJjNmZlNjdmZTgwOTdkM2NkMjA2OTY5ZmM1YzAwMTdjNjBiNmI0MDk5MGM3NzJhNmYwYWMwYSJ9fX0=
+    slot: 12
+    priority: 2
+    display_name: "&#e4e429&lLevel 45"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f440 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f5 Additional Hearts"
+      - "&8&l| &f$20,000"
+      - "&8&l| &f300 Coins"
+      - "&8&l| &f200 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '440'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.45'
+
+      - '[console] lifestealcore add %player_name% 5'
+      - '[console] eco give %player_name% 20000'
+      - '[console] points give %player_name% 300'
+      - '[giveexp] 200'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 45! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-45':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 12
+    priority: 1
+    display_name: "&#e4e429&lLevel 45"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.45' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f440 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f5 Additional Hearts"
+      - "&8&l| &f$20,000"
+      - "&8&l| &f300 Coins"
+      - "&8&l| &f200 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+
+  # -- #   LEVEL 46   # -- #
+  'level-46':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc2OTVmOTZkZGE2MjZmYWFhMDEwZjRhNWYyOGE1M2NkNjZmNzdkZTBjYzI4MGU3YzU4MjVhZDY1ZWVkYzcyZSJ9fX0=
+    slot: 13
+    priority: 2
+    display_name: "&#81d11c&lLevel 46"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f448 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$10,000"
+      - "&8&l| &f175 Coins"
+      - "&8&l| &f100 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '448'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.46'
+
+      - '[console] lifestealcore add %player_name% 1'
+      - '[console] eco give %player_name% 10000'
+      - '[console] points give %player_name% 175'
+      - '[giveexp] 100'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 46! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-46':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 13
+    priority: 1
+    display_name: "&#81d11c&lLevel 46"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.46' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f448 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$10,000"
+      - "&8&l| &f175 Coins"
+      - "&8&l| &f100 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 47   # -- #
+  'level-47':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI4MTg4NmZmODliNDdlOTg3NWY5Y2E5MjM0NjhjMTY0ZGUyZjJlNTIyNDBkNTkwZGE5YWUxYTY5ODhiNTM4OSJ9fX0=
+    slot: 14
+    priority: 2
+    display_name: "&#8db7f1&lLevel 47"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f456 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$12,500"
+      - "&8&l| &f180 Coins"
+      - "&8&l| &f125 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '456'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.47'
+
+      - '[console] lifestealcore add %player_name% 1'
+      - '[console] eco give %player_name% 12500'
+      - '[console] points give %player_name% 180'
+      - '[giveexp] 125'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 47! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-47':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 14
+    priority: 1
+    display_name: "&#8db7f1&lLevel 47"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.47' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f456 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$12,500"
+      - "&8&l| &f180 Coins"
+      - "&8&l| &f125 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 48   # -- #
+  'level-48':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQ4NzJjOGY3YTZjZWY3OTg2NDc2OWYwY2ZmNzFlZjIzZjU2NTY1NjdkZTAwMDFhZWYzNmM2YjYxNjJhYjAyZCJ9fX0=
+    slot: 15
+    priority: 2
+    display_name: "&#ae63d5&lLevel 48"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f464 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f2 Additional Hearts"
+      - "&8&l| &f$15,000"
+      - "&8&l| &f185 Coins"
+      - "&8&l| &f150 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '464'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.48'
+
+      - '[console] lifestealcore add %player_name% 2'
+      - '[console] eco give %player_name% 15000'
+      - '[console] points give %player_name% 185'
+      - '[giveexp] 150'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 48! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-48':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 15
+    priority: 1
+    display_name: "&#ae63d5&lLevel 48"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.48' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f464 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f2 Additional Hearts"
+      - "&8&l| &f$15,000"
+      - "&8&l| &f185 Coins"
+      - "&8&l| &f150 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 49   # -- #
+  'level-49':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMxYjRjYjdmNmYxNjEyMjNiZjBiM2U2YjNkOGFhZDRjMTBhYmIyNGJhNTI1NGYwZWY0MDBjOTY3NGY5YTYzIn19fQ==
+    slot: 16
+    priority: 2
+    display_name: "&#f4b2d3&lLevel 49"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f472 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$20,000"
+      - "&8&l| &f190 Coins"
+      - "&8&l| &f175 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '472'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.49'
+
+      - '[console] lifestealcore add %player_name% 1'
+      - '[console] eco give %player_name% 20000'
+      - '[console] points give %player_name% 190'
+      - '[giveexp] 175'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 49! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-49':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 16
+    priority: 1
+    display_name: "&#f4b2d3&lLevel 49"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.49' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f472 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$20,000"
+      - "&8&l| &f190 Coins"
+      - "&8&l| &f175 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 50   # -- #
+  'level-50':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2M0ZDdhM2JjM2RlODMzZDMwMzJlODVhMGJmNmYyYmVmNzY4Nzg2MmIzYzZiYzQwY2U3MzEwNjRmNjE1ZGQ5ZCJ9fX0=
+    slot: 19
+    priority: 2
+    display_name: "&#cf4242&lLevel 50"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f480 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$25,000"
+      - "&8&l| &f195 Coins"
+      - "&8&l| &f200 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '480'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.50'
+
+      - '[console] lifestealcore add %player_name% 3'
+      - '[console] eco give %player_name% 25000'
+      - '[console] points give %player_name% 195'
+      - '[giveexp] 200'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 50! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-50':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 19
+    priority: 1
+    display_name: "&#cf4242&lLevel 50"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.50' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f480 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$25,000"
+      - "&8&l| &f195 Coins"
+      - "&8&l| &f200 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 51   # -- #
+  'level-51':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTMzMzBmYmVkMzc3YzI0NGY0ODdlNGJjNTY4MmQxNWFmNDBkM2NlNGMzMmVlMDNmYzI0YTdmOTUyZTdkMjlhOSJ9fX0=
+    slot: 20
+    priority: 2
+    display_name: "&#f1b13e&lLevel 51"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f488 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$30,000"
+      - "&8&l| &f200 Coins"
+      - "&8&l| &f225 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '488'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.51'
+
+      - '[console] lifestealcore add %player_name% 1'
+      - '[console] eco give %player_name% 30000'
+      - '[console] points give %player_name% 200'
+      - '[giveexp] 225'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 51! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-51':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 20
+    priority: 1
+    display_name: "&#f1b13e&lLevel 51"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.51' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f488 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$30,000"
+      - "&8&l| &f200 Coins"
+      - "&8&l| &f225 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 52   # -- #
+  'level-52':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlhMDMwY2EyYjJjNmZlNjdmZTgwOTdkM2NkMjA2OTY5ZmM1YzAwMTdjNjBiNmI0MDk5MGM3NzJhNmYwYWMwYSJ9fX0=
+    slot: 21
+    priority: 2
+    display_name: "&#e4e429&lLevel 52"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f496 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f2 Additional Hearts"
+      - "&8&l| &f$35,000"
+      - "&8&l| &f210 Coins"
+      - "&8&l| &f250 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '496'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.52'
+
+      - '[console] lifestealcore add %player_name% 2'
+      - '[console] eco give %player_name% 35000'
+      - '[console] points give %player_name% 210'
+      - '[giveexp] 250'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 52! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-52':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 21
+    priority: 1
+    display_name: "&#e4e429&lLevel 52"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.52' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f496 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f2 Additional Hearts"
+      - "&8&l| &f$35,000"
+      - "&8&l| &f210 Coins"
+      - "&8&l| &f250 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 53   # -- #
+  'level-53':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc2OTVmOTZkZGE2MjZmYWFhMDEwZjRhNWYyOGE1M2NkNjZmNzdkZTBjYzI4MGU3YzU4MjVhZDY1ZWVkYzcyZSJ9fX0=
+    slot: 22
+    priority: 2
+    display_name: "&#81d11c&lLevel 53"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f504 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$40,000"
+      - "&8&l| &f220 Coins"
+      - "&8&l| &f275 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '504'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.53'
+
+      - '[console] lifestealcore add %player_name% 1'
+      - '[console] eco give %player_name% 40000'
+      - '[console] points give %player_name% 220'
+      - '[giveexp] 275'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 53! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-53':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 22
+    priority: 1
+    display_name: "&#81d11c&lLevel 53"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.53' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f504 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$40,000"
+      - "&8&l| &f220 Coins"
+      - "&8&l| &f275 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 54   # -- #
+  'level-54':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI4MTg4NmZmODliNDdlOTg3NWY5Y2E5MjM0NjhjMTY0ZGUyZjJlNTIyNDBkNTkwZGE5YWUxYTY5ODhiNTM4OSJ9fX0=
+    slot: 23
+    priority: 2
+    display_name: "&#8db7f1&lLevel 54"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f512 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$45,000"
+      - "&8&l| &f230 Coins"
+      - "&8&l| &f300 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '512'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.54'
+
+      - '[console] lifestealcore add %player_name% 1'
+      - '[console] eco give %player_name% 45000'
+      - '[console] points give %player_name% 230'
+      - '[giveexp] 300'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 54! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-54':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 23
+    priority: 1
+    display_name: "&#8db7f1&lLevel 54"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.54' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f512 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$45,000"
+      - "&8&l| &f230 Coins"
+      - "&8&l| &f300 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 55   # -- #
+  'level-55':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQ4NzJjOGY3YTZjZWY3OTg2NDc2OWYwY2ZmNzFlZjIzZjU2NTY1NjdkZTAwMDFhZWYzNmM2YjYxNjJhYjAyZCJ9fX0=
+    slot: 24
+    priority: 2
+    display_name: "&#ae63d5&lLevel 55"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f520 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$50,000"
+      - "&8&l| &f240 Coins"
+      - "&8&l| &f325 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '520'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.55'
+
+      - '[console] lifestealcore add %player_name% 3'
+      - '[console] eco give %player_name% 50000'
+      - '[console] points give %player_name% 240'
+      - '[giveexp] 325'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 55! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-55':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 24
+    priority: 1
+    display_name: "&#ae63d5&lLevel 55"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.55' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f520 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$50,000"
+      - "&8&l| &f240 Coins"
+      - "&8&l| &f325 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 56   # -- #
+  'level-56':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMxYjRjYjdmNmYxNjEyMjNiZjBiM2U2YjNkOGFhZDRjMTBhYmIyNGJhNTI1NGYwZWY0MDBjOTY3NGY5YTYzIn19fQ==
+    slot: 25
+    priority: 2
+    display_name: "&#f4b2d3&lLevel 56"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f528 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$60,000"
+      - "&8&l| &f250 Coins"
+      - "&8&l| &f350 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '528'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.56'
+
+      - '[console] lifestealcore add %player_name% 1'
+      - '[console] eco give %player_name% 60000'
+      - '[console] points give %player_name% 250'
+      - '[giveexp] 350'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 56! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-56':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 25
+    priority: 1
+    display_name: "&#f4b2d3&lLevel 56"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.56' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f528 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$60,000"
+      - "&8&l| &f250 Coins"
+      - "&8&l| &f350 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 57   # -- #
+  'level-57':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2M0ZDdhM2JjM2RlODMzZDMwMzJlODVhMGJmNmYyYmVmNzY4Nzg2MmIzYzZiYzQwY2U3MzEwNjRmNjE1ZGQ5ZCJ9fX0=
+    slot: 28
+    priority: 2
+    display_name: "&#cf4242&lLevel 57"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f536 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f2 Additional Hearts"
+      - "&8&l| &f$70,000"
+      - "&8&l| &f255 Coins"
+      - "&8&l| &f375 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '536'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.57'
+
+      - '[console] lifestealcore add %player_name% 2'
+      - '[console] eco give %player_name% 70000'
+      - '[console] points give %player_name% 255'
+      - '[giveexp] 375'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 57! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-57':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 28
+    priority: 1
+    display_name: "&#cf4242&lLevel 57"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.57' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f536 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f2 Additional Hearts"
+      - "&8&l| &f$70,000"
+      - "&8&l| &f255 Coins"
+      - "&8&l| &f375 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 58   # -- #
+  'level-58':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTMzMzBmYmVkMzc3YzI0NGY0ODdlNGJjNTY4MmQxNWFmNDBkM2NlNGMzMmVlMDNmYzI0YTdmOTUyZTdkMjlhOSJ9fX0=
+    slot: 29
+    priority: 2
+    display_name: "&#f1b13e&lLevel 58"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f544 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$80,000"
+      - "&8&l| &f275 Coins"
+      - "&8&l| &f400 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '544'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.58'
+
+      - '[console] lifestealcore add %player_name% 3'
+      - '[console] eco give %player_name% 80000'
+      - '[console] points give %player_name% 275'
+      - '[giveexp] 400'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 58! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-58':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 29
+    priority: 1
+    display_name: "&#f1b13e&lLevel 58"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.58' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f544 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$80,000"
+      - "&8&l| &f275 Coins"
+      - "&8&l| &f400 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 59   # -- #
+  'level-59':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlhMDMwY2EyYjJjNmZlNjdmZTgwOTdkM2NkMjA2OTY5ZmM1YzAwMTdjNjBiNmI0MDk5MGM3NzJhNmYwYWMwYSJ9fX0=
+    slot: 30
+    priority: 2
+    display_name: "&#e4e429&lLevel 59"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f552 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$90,000"
+      - "&8&l| &f300 Coins"
+      - "&8&l| &f500 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '552'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.59'
+
+      - '[console] lifestealcore add %player_name% 1'
+      - '[console] eco give %player_name% 90000'
+      - '[console] points give %player_name% 300'
+      - '[giveexp] 500'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 59! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-59':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 30
+    priority: 1
+    display_name: "&#e4e429&lLevel 59"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.59' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f552 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f1 Additional Heart"
+      - "&8&l| &f$90,000"
+      - "&8&l| &f300 Coins"
+      - "&8&l| &f500 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+  # -- #   LEVEL 60   # -- #
+  'level-60':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc2OTVmOTZkZGE2MjZmYWFhMDEwZjRhNWYyOGE1M2NkNjZmNzdkZTBjYzI4MGU3YzU4MjVhZDY1ZWVkYzcyZSJ9fX0=
+    slot: 31
+    priority: 2
+    display_name: "&#81d11c&lLevel 60"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f560 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f2 Additional Hearts"
+      - "&8&l| &f$50,000"
+      - "&8&l| &f310 Coins"
+      - "&8&l| &f600 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '560'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.60'
+
+      - '[console] lifestealcore add %player_name% 2'
+      - '[console] eco give %player_name% 50000'
+      - '[console] points give %player_name% 310'
+      - '[giveexp] 600'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 60! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-60':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 31
+    priority: 1
+    display_name: "&#81d11c&lLevel 60"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.60' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f560 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f2 Additional Hearts"
+      - "&8&l| &f$50,000"
+      - "&8&l| &f310 Coins"
+      - "&8&l| &f600 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+
+  # -- #   LEVEL 61   # -- #
+  'level-61':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI4MTg4NmZmODliNDdlOTg3NWY5Y2E5MjM0NjhjMTY0ZGUyZjJlNTIyNDBkNTkwZGE5YWUxYTY5ODhiNTM4OSJ9fX0=
+    slot: 32
+    priority: 2
+    display_name: "&#8db7f1&lLevel 61"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f568 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$60,000"
+      - "&8&l| &f320 Coins"
+      - "&8&l| &f700 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '568'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.61'
+
+      - '[console] lifestealcore add %player_name% 2'
+      - '[console] eco give %player_name% 60000'
+      - '[console] points give %player_name% 320'
+      - '[giveexp] 700'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 61! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-61':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 32
+    priority: 1
+    display_name: "&#8db7f1&lLevel 61"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.61' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f568 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f3 Additional Hearts"
+      - "&8&l| &f$60,000"
+      - "&8&l| &f320 Coins"
+      - "&8&l| &f700 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+
+  # -- #   LEVEL 62   # -- #
+  'level-62':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQ4NzJjOGY3YTZjZWY3OTg2NDc2OWYwY2ZmNzFlZjIzZjU2NTY1NjdkZTAwMDFhZWYzNmM2YjYxNjJhYjAyZCJ9fX0=
+    slot: 33
+    priority: 2
+    display_name: "&#ae63d5&lLevel 62"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f576 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f4 Additional Hearts"
+      - "&8&l| &f$70,000"
+      - "&8&l| &f330 Coins"
+      - "&8&l| &f800 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '576'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.62'
+
+      - '[console] lifestealcore add %player_name% 3'
+      - '[console] eco give %player_name% 70000'
+      - '[console] points give %player_name% 330'
+      - '[giveexp] 800'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 62! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-62':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 33
+    priority: 1
+    display_name: "&#ae63d5&lLevel 62"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.62' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f576 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f4 Additional Hearts"
+      - "&8&l| &f$70,000"
+      - "&8&l| &f330 Coins"
+      - "&8&l| &f800 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"
+
+
+
+
+  # -- #   LEVEL 63   # -- #
+  'level-63':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMxYjRjYjdmNmYxNjEyMjNiZjBiM2U2YjNkOGFhZDRjMTBhYmIyNGJhNTI1NGYwZWY0MDBjOTY3NGY5YTYzIn19fQ==
+    slot: 34
+    priority: 2
+    display_name: "&#f4b2d3&lLevel 63"
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f584 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f10 Additional Hearts"
+      - "&8&l| &f$100,000"
+      - "&8&l| &f500 Coins"
+      - "&8&l| &f1,000 EXP"
+      - ""
+      - "&#fcfc54&l➥ CLICK TO REDEEM"
+
+    click_requirement:
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '584'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough playtime to rankup to this level!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+
+    click_commands:
+      - '[givepermission] meta.playtimelevels.63'
+
+      - '[console] lifestealcore add %player_name% 10'
+      - '[console] eco give %player_name% 100000'
+      - '[console] points give %player_name% 500'
+      - '[giveexp] 1000'
+
+      - '[close]'
+
+      - "[broadcast] &f"
+      - "[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Level 63! &7(/playtime)"
+      - "[broadcast] &f"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+
+  'locked-63':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY3YTJmMjE4YTZlNmUzOGYyYjU0NWY2YzE3NzMzZjRlZjliYmIyODhlNzU0MDI5NDljMDUyMTg5ZWUifX19
+    slot: 34
+    priority: 1
+    display_name: "&#f4b2d3&lLevel 63"
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: 'meta.playtimelevels.63' 
+    lore:
+      - ""
+      - "&#f80026Requirement:"
+      - "&8&l| &f584 Hours of Playtime"
+      - ""
+      - "&#3ae108Rewards:"
+      - "&8&l| &f10 Additional Hearts"
+      - "&8&l| &f$100,000"
+      - "&8&l| &f500 Coins"
+      - "&8&l| &f1,000 EXP"
+      - ""
+      - "&#FF3B3B&l➥ REWARD CLAIMED"

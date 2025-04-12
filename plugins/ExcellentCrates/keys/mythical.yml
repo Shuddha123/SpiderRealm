@@ -1,0 +1,7 @@
+Name: '&c&lFIRE KEYS'
+Virtual: false
+Item:
+  Material: RED_CANDLE
+  Name: '&b&lMYTHICAL KEY'
+  Enchants:
+    mending: 1

@@ -1,0 +1,47 @@
+pages:
+  page1:
+    gui-rows: 3
+    items:
+      '1':
+        material: SPAWNER
+        buy: 200.0
+        sell: -1.0
+        name: §9§lPhantom§f§l Spawner
+        slot: 11
+      '2':
+        material: SPAWNER
+        buy: 430.0
+        sell: -1.0
+        name: §3§lGaurdian§f§l Spawner
+        slot: 13
+      '3':
+        material: SPAWNER
+        buy: 550.0
+        sell: -1.0
+        name: §d§lEnderman§f§l Spawner
+        slot: 14
+      '4':
+        material: SPAWNER
+        buy: 700.0
+        sell: -1.0
+        name: §a§lCreeper§f§l Spawner
+        slot: 15
+      '5':
+        material: SPAWNER
+        buy: 1100.0
+        sell: -1.0
+        name: §7§lIron Golem§f§l Spawner
+        slot: 16
+      '6':
+        material: SPAWNER
+        buy: 350.0
+        sell: -1.0
+        name: §6§lBlaze§f§l Spawner
+        slot: 11
+      '7':
+        material: SPAWNER
+        buy: 1600.0
+        sell: -1.0
+        name: §8§lEvoker§f§l Spawner
+        slot: 17
+

@@ -1,0 +1,25 @@
+Last_Opener: NexaMine99
+Last_Reward: '&5&l&n300 ᴄʀʏꜱᴛᴀʟ'
+Key:
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+  Ids:
+  - celestial
+Name: celestial
+Permission_Required: false
+Opening:
+  Cooldown: 0
+Item:
+  Material: AIR
+Block:
+  Positions: []
+  Pushback:
+    Enabled: false
+  Hologram:
+    Enabled: false
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: SIMPLE
+    Particle:
+      Name: 'null'

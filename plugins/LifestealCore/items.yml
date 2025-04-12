@@ -1,0 +1,691 @@
+#########################################################################################
+#                                                                                       #
+# LifestealCore, a premium resource by Norska @ https://norska.dev                      #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome                                                 #
+# Support: https://norska.dev/discord/                                                  #
+#                                                                                       #
+# You are editing the items.yml file of LifestealCore.                                  #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# Please consult the wiki for any questions regarding the setup of this plugin, if you  #
+# still require help, open a ticket on my discord server!                               #
+#                                                                                       #
+#########################################################################################
+
+items:
+
+   hearts:
+
+      heart_tier1:
+         item:
+            name: '<SOLID:ff0000>Heart &7[Tier &fI&7]'
+            lore:
+            - ''
+            - '&7Consume to gain <SOLID:ff0000>❤ &7extra heart!'
+            - ''
+            - '&c» &7You can steal hearts from other players'
+            - '&7by killing them, find them in event crates or'
+            - '&7purchase them directly from the webstore!'
+            - ''
+            - '&e(store.yourserver.com)'
+            - ''
+            - '&8[Click to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CLOCK'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 1
+            glow: false
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            - 'HIDE_DESTROYS'
+            - 'HIDE_DYE'
+            - 'HIDE_POTION_EFFECTS'
+            - 'HIDE_UNBREAKABLE'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:ff0000>Heart &7[Tier &fI&7]'
+         settings:
+            hearts: 1
+            cooldown: 10
+            # Note: Chance to drop this heart when a player gets killed.
+            dropchance: 80
+         effects:
+            onConsume:
+               effect: 'HEART'
+               amount: 10             
+         recipe:
+            enabled: true
+            layout:
+            - '*-*'
+            - '-+-'
+            - '*-*'
+            items:
+               "*":
+                  material: "IRON_INGOT"
+               "+":
+                  material: "LANTERN"
+               "-":
+                  material: "GOLDEN_APPLE"
+            
+      heart_tier2:
+         item:
+            name: '<SOLID:ff0000>Heart &7[Tier &fII&7]'
+            lore:
+            - ''
+            - '&7Consume to gain <SOLID:ff0000>❤❤ &7extra hearts!'
+            - ''
+            - '&c» &7You can steal hearts from other players'
+            - '&7by killing them, find them in event crates or'
+            - '&7purchase them directly from the webstore!'
+            - ''
+            - '&e(store.yourserver.com)'
+            - ''
+            - '&8[Click to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CLOCK'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 2
+            glow: false
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            - 'HIDE_DESTROYS'
+            - 'HIDE_DYE'
+            - 'HIDE_POTION_EFFECTS'
+            - 'HIDE_UNBREAKABLE'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:ff0000>Heart &7[Tier &fII&7]'
+         settings:
+            hearts: 2    
+            cooldown: 30
+            # Note: Chance to drop this heart when a player gets killed.
+            dropchance: 15
+         effects:
+            onConsume:
+               effect: 'HEART'
+               amount: 20              
+         recipe:
+            enabled: true
+            layout:
+            - '*-*'
+            - '-+-'
+            - '*-*'
+            items:
+               "*":
+                  material: "GOLD_INGOT"
+               "+":
+                  material: "HEART_TIER1"
+               "-":
+                  material: "GOLDEN_APPLE" 
+            
+      heart_tier3:
+         item:
+            name: '<SOLID:ff0000>Heart &7[Tier &fIII&7]'
+            lore:
+            - ''
+            - '&7Consume to gain <SOLID:ff0000>❤❤❤ &7extra hearts!'
+            - ''
+            - '&c» &7You can steal hearts from other players'
+            - '&7by killing them, find them in event crates or'
+            - '&7purchase them directly from the webstore!'
+            - ''
+            - '&e(store.yourserver.com)'
+            - ''
+            - '&8[Click to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CLOCK'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 3
+            glow: false
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            - 'HIDE_DESTROYS'
+            - 'HIDE_DYE'
+            - 'HIDE_POTION_EFFECTS'
+            - 'HIDE_UNBREAKABLE'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:ff0000>Heart &7[Tier &fIII&7]'
+         settings:
+            hearts: 3  
+            cooldown: 60
+            # Note: Chance to drop this heart when a player gets killed.
+            dropchance: 5  
+         effects:
+            onConsume:
+               effect: 'HEART'
+               amount: 30                 
+         recipe:
+            enabled: true
+            layout:
+            - '*-*'
+            - '-+-'
+            - '*-*'
+            items:
+               "*":
+                  material: "DIAMOND"
+               "+":
+                  material: "HEART_TIER2"
+               "-":
+                  material: "GOLDEN_APPLE"        
+            
+            
+   effecthearts:
+
+      scroll_escape:
+         item:
+            name: '<SOLID:bafcff>Sacrificial Escape Scroll &7(<SOLID:ff0000>-❤&7)'
+            lore:
+            - ''
+            - '&7Consume to gain a temporary "<SOLID:bafcff>Escape" &7buff!'
+            - ''
+            - '&f&lBuff: &bSpeed & Invisibility (10s)'
+            - ''
+            - '<SOLID:bafcff>» &7You can craft sacrificial scrolls, find them'
+            - '&7in event crates or purchase them directly'
+            - '&7from the webstore!'
+            - ''
+            - '&e(store.yourserver.com)'
+            - ''
+            - '&8[Click to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CLOCK'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 4
+            glow: false
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            - 'HIDE_DESTROYS'
+            - 'HIDE_DYE'
+            - 'HIDE_POTION_EFFECTS'
+            - 'HIDE_UNBREAKABLE'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:bafcff>Sacrificial Escape Scroll'
+         settings:
+            # Note: Effect format -> EFFECT:LEVEL:DURATION
+            # Note: Find potion effect names by googling "<Server Version> Potion Effect Enum"
+            effects:
+            - 'SPEED:1:10'
+            - 'INVISIBILITY:1:10'     
+            # Note: Cooldown is in seconds.
+            cooldown: 600
+            heartCost: 1
+         effects:
+            onConsume:
+               effect: 'SMOKE_LARGE'
+               amount: 10              
+         recipe:
+            enabled: true
+            layout:
+            - '-+-'
+            - '+*+'
+            - '-+-'
+            items:
+               "+":
+                  material: "PAPER"
+               "-":
+                  material: "FEATHER"  
+               "*":
+                  material: "HEART_TIER1"          
+            
+      scroll_shell:
+         item:
+            name: '<SOLID:8fff75>Sacrificial Shell Scroll &7(<SOLID:ff0000>-❤❤&7)'
+            lore:
+            - ''
+            - '&7Consume to gain a temporary "<SOLID:8fff75>Shell" &7buff!'
+            - ''
+            - '&f&lBuff: &aDamage & Fire Resistance (10s)'
+            - ''
+            - '<SOLID:8fff75>» &7You can craft sacrificial scrolls, find them'
+            - '&7in event crates or purchase them directly'
+            - '&7from the webstore!'
+            - ''
+            - '&e(store.yourserver.com)'
+            - ''
+            - '&8[Click to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CLOCK'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 6
+            glow: false
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            - 'HIDE_DESTROYS'
+            - 'HIDE_DYE'
+            - 'HIDE_POTION_EFFECTS'
+            - 'HIDE_UNBREAKABLE'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:8fff75>Sacrificial Shell Scroll'
+         settings:
+            # Note: Effect format -> EFFECT:LEVEL:DURATION
+            # Note: Find potion effect names by googling "<Server Version> Potion Effect Enum"
+            effects:
+            - 'DAMAGE_RESISTANCE:1:10'
+            - 'FIRE_RESISTANCE:1:10'  
+            # Note: Cooldown is in seconds.
+            cooldown: 600
+            heartCost: 2
+         effects:
+            onConsume:
+               effect: 'VILLAGER_HAPPY'
+               amount: 10              
+         recipe:
+            enabled: true
+            layout:
+            - '-+-'
+            - '+*+'
+            - '-+-'
+            items:
+               "+":
+                  material: "PAPER"
+               "-":
+                  material: "TURTLE_HELMET"  
+               "*":
+                  material: "HEART_TIER2"             
+            
+      scroll_rage:
+         item:
+            name: '<SOLID:ff5e5e>Sacrificial Rage Scroll &7(<SOLID:ff0000>-❤❤❤&7)'
+            lore:
+            - ''
+            - '&7Consume to gain a temporary "<SOLID:ff5e5e>Rage" &7buff!'
+            - ''
+            - '&f&lBuff: &cDamage & Haste (10s)'
+            - ''
+            - '<SOLID:ff5e5e>» &7You can craft sacrificial scrolls, find them'
+            - '&7in event crates or purchase them directly'
+            - '&7from the webstore!'
+            - ''
+            - '&e(store.yourserver.com)'
+            - ''
+            - '&8[Click to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CLOCK'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 7
+            glow: false
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            - 'HIDE_DESTROYS'
+            - 'HIDE_DYE'
+            - 'HIDE_POTION_EFFECTS'
+            - 'HIDE_UNBREAKABLE'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:ff5e5e>Sacrificial Rage Scroll'            
+         settings:
+            # Note: Effect format -> EFFECT:LEVEL:DURATION
+            # Note: Find potion effect names by googling "<Server Version> Potion Effect Enum"
+            effects:
+            - 'INCREASE_DAMAGE:1:10'
+            - 'FAST_DIGGING:1:10'   
+            # Note: Cooldown is in seconds.
+            cooldown: 600      
+            heartCost: 3     
+         effects:
+            onConsume:
+               effect: 'CRIMSON_SPORE'
+               amount: 10            
+         recipe:
+            enabled: true
+            layout:
+            - '-+-'
+            - '+*+'
+            - '-+-'
+            items:
+               "+":
+                  material: "PAPER"
+               "-":
+                  material: "SWEET_BERRIES"  
+               "*":
+                  material: "HEART_TIER3"                          
+            
+   beacons:
+
+   # Placeholders: {PLAYER} = player bound to beacon for resurrection.
+
+      beacon_Tier1:
+         item:
+            name: '<SOLID:b5abaa>Revive Beacon [Tier I]'
+            lore:
+            - ''
+            - '<SOLID:b5abaa>· &fInformation:'
+            - ' <SOLID:827a79>» &7Revive Time: <SOLID:b5abaa>120s'
+            - ' <SOLID:827a79>» &7Cooldown: <SOLID:b5abaa>2h'
+            - ' <SOLID:827a79>» &7Durability: <SOLID:b5abaa>5'  
+            - ''
+            - '<SOLID:b5abaa>· &fUsage:'
+            - ' <SOLID:827a79>» &7Place this beacon down to revive an'
+            - ' &7eliminated player. You must protect the'
+            - ' &7beacon during the resurrection process!'
+            - ''
+            - '<SOLID:b5abaa>· &fBound to:'
+            - ' <SOLID:827a79>» &7{PLAYER}'
+            - ''
+            - '<SOLID:b5abaa>· &c&nWarning:&r &7Location will be broadcasted upon usage!'
+            - ''
+            - '&8[Place down to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CUSTOM_SKULL-17ee3377f507ef255108e7f229f0f735455a6d9ce9673b6574bfd46ae8008853'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 0
+            glow: true
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:b5abaa>Revive Beacon [Tier I]'
+         settings:
+             # Note: Amount of time (in seconds) to finish the resurrection process.
+            reviveTime: 120
+            # Note: Amount of times the beacon can be broken before breaking entirely.
+            durability: 5
+            cooldown: 7200
+            # Note: Whether or not there will be a broadcast when using the revive beacon.
+            silent: false
+         effects:
+            duringResurrection:
+               effect: 'SMOKE_LARGE'
+               amount: 10
+            onFinish:
+               effect: 'EXPLOSION_LARGE'
+               amount: 5
+         hologram:
+            # Placeholders: {0} = player, {1} = time left, {2} = durability
+            layout:
+            - '<SOLID:b5abaa>Revive Beacon [Tier I]'
+            - ''
+            - '&8[&c☠&8] <SOLID:ff1c55>{0}'
+            - '&7Resurrecting the dead... &f(<SOLID:ff1c55>{1}&f)'
+            - '<SOLID:ff1c55>⚠ &fDurability left: &4{2} breaks'
+            # Note: Select which lines to update (with placeholders). It is more efficient than updating the whole placeholder.
+            updateLines: [2,3,4] 
+            offset:
+               X: 0.5
+               Y: 2.5
+               Z: 0.5  
+         recipe:
+            enabled: true
+            layout:
+            - '-*-'
+            - '&+&'
+            - '-*-'
+            items:
+               "*":
+                  material: "SOUL_LANTERN"
+               "+":
+                  material: "BEACON"
+               "-":
+                  material: "IRON_INGOT"     
+               "&":
+                  material: "HEART_TIER1"                      
+            
+      beacon_Tier2:
+         item:
+            name: '<SOLID:6eff88>Revive Beacon [Tier II]'
+            lore:
+            - ''
+            - '<SOLID:6eff88>· &fInformation:'
+            - ' <SOLID:33a648>» &7Revive Time: <SOLID:6eff88>90s'
+            - ' <SOLID:33a648>» &7Cooldown: <SOLID:6eff88>2.5h'
+            - ' <SOLID:33a648>» &7Durability: <SOLID:6eff88>5 breaks'
+            - ''
+            - '<SOLID:6eff88>· &fUsage:'
+            - ' <SOLID:33a648>» &7Place this beacon down to revive an'
+            - ' &7eliminated player. You must protect the'
+            - ' &7beacon during the resurrection process!'
+            - ''
+            - '<SOLID:6eff88>· &fBound to:'
+            - ' <SOLID:33a648>» &7{PLAYER}'
+            - ''
+            - '<SOLID:6eff88>· &c&nWarning:&r &7Location will be broadcasted upon usage!'
+            - ''
+            - '&8[Place down to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CUSTOM_SKULL-83a6858012b25e1e86adbf8cf06ba5d2d924b4c23fcd4d5e513cfa81242623b9'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 0
+            glow: true
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:6eff88>Revive Beacon [Tier II]'
+         settings:
+             # Note: Amount of time (in seconds) to finish the resurrection process.
+            reviveTime: 90
+            # Note: Amount of times the beacon can be broken before breaking entirely.
+            durability: 5   
+            cooldown: 9000
+            # Note: Whether or not there will be a broadcast when using the revive beacon.
+            silent: false
+         effects:
+            duringResurrection:
+               effect: 'VILLAGER_HELP'
+               amount: 10
+            onFinish:
+               effect: 'EXPLOSION_LARGE'
+               amount: 5
+         hologram:
+            # Placeholders: {0} = player, {1} = time left, {2} = durability
+            layout:
+            - '<SOLID:6eff88>Revive Beacon [Tier II]'
+            - ''
+            - '&8[&c☠&8] <SOLID:ff1c55>{0}'
+            - '&7Resurrecting the dead... &f(<SOLID:ff1c55>{1}&f)'
+            - '<SOLID:ff1c55>⚠ &fDurability left: &4{2} breaks'
+            # Note: Select which lines to update (with placeholders). It is more efficient than updating the whole placeholder.
+            updateLines: [2,3,4]  
+            offset:
+               X: 0.5
+               Y: 2.5
+               Z: 0.5  
+         recipe:
+            enabled: true
+            layout:
+            - '-*-'
+            - '&+&'
+            - '-*-'
+            items:
+               "*":
+                  material: "SOUL_LANTERN"
+               "+":
+                  material: "BEACON"
+               "-":
+                  material: "IRON_INGOT"     
+               "&":
+                  material: "HEART_TIER2"                               
+               
+      beacon_Tier3:
+         item:
+            name: '<SOLID:f5f760>Revive Beacon [Tier III]'
+            lore:
+            - ''
+            - '<SOLID:f5f760>· &fInformation:'
+            - ' <SOLID:cc983f>» &7Revive Time: <SOLID:f5f760>60s'
+            - ' <SOLID:cc983f>» &7Cooldown: <SOLID:f5f760>3h'
+            - ' <SOLID:cc983f>» &7Durability: <SOLID:f5f760>5 breaks'
+            - ''
+            - '<SOLID:f5f760>· &fUsage:'
+            - ' <SOLID:cc983f>» &7Place this beacon down to revive an'
+            - ' &7eliminated player. You must protect the'
+            - ' &7beacon during the resurrection process!'
+            - ''
+            - '<SOLID:f5f760>· &fBound to:'
+            - ' <SOLID:cc983f>» &7{PLAYER}'
+            - ''
+            - '<SOLID:f5f760>· &c&nWarning:&r &7Location will be broadcasted upon usage!'
+            - ''
+            - '&8[Place down to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CUSTOM_SKULL-9265f96f54b78885c46e7d2f86b1c1dbfe643c6060fc7fcc9834c3e3fd595135'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 0
+            glow: true
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:f5f760>Revive Beacon [Tier III]'
+         settings:
+            # Note: Amount of time (in seconds) to finish the resurrection process.
+            reviveTime: 60
+            # Note: Amount of times the beacon can be broken before breaking entirely.
+            durability: 5 
+            cooldown: 10800
+            # Note: Whether or not there will be a broadcast when using the revive beacon.
+            silent: false
+         effects:
+            duringResurrection:
+               effect: 'FLAME'
+               amount: 10
+            onFinish:
+               effect: 'EXPLOSION_LARGE'
+               amount: 5
+         hologram:
+            # Placeholders: {0} = player, {1} = time left, {2} = durability
+            layout:
+            - '<SOLID:f5f760>Revive Beacon [Tier III]'
+            - ''
+            - '&8[&c☠&8] <SOLID:ff1c55>{0}'
+            - '&7Resurrecting the dead... &f(<SOLID:ff1c55>{1}&f)'
+            - '<SOLID:ff1c55>⚠ &fDurability left: &4{2} breaks'
+            # Note: Select which lines to update (with placeholders). It is more efficient than updating the whole placeholder.
+            updateLines: [2,3,4] 
+            offset:
+               X: 0.5
+               Y: 2.5
+               Z: 0.5   
+         recipe:
+            enabled: true
+            layout:
+            - '-*-'
+            - '&+&'
+            - '-*-'
+            items:
+               "*":
+                  material: "SOUL_LANTERN"
+               "+":
+                  material: "BEACON"
+               "-":
+                  material: "IRON_INGOT"     
+               "&":
+                  material: "HEART_TIER3"           
+               
+      beacon_Ghost:
+         item:
+            name: '<SOLID:e7a1ff>Revive Beacon [Ghost]'
+            lore:
+            - ''
+            - '<SOLID:e7a1ff>· &fInformation:'
+            - ' <SOLID:dab3e8>» &7Revive Time: <SOLID:dab3e8>5m'
+            - ' <SOLID:dab3e8>» &7Cooldown: <SOLID:dab3e8>6h'
+            - ' <SOLID:dab3e8>» &7Durability: <SOLID:dab3e8>1 break'
+            - ''
+            - '<SOLID:e7a1ff>· &fUsage:'
+            - ' <SOLID:dab3e8>» &7Place this beacon down to revive an'
+            - ' &7eliminated player. You must protect the'
+            - ' &7beacon during the resurrection process!'
+            - ''
+            - '<SOLID:e7a1ff>· &fBound to:'
+            - ' <SOLID:dab3e8>» &7{PLAYER}'
+            - ''
+            - '<SOLID:e7a1ff>· <SOLID:b570ff>&nSpecial Effect:&r &7No location broadcast upon usage!'
+            - ''
+            - '&8[Place down to use]'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CUSTOM_SKULL-dfa13032fa939f184daa6a4e11e6f3a913e48f250498165c5665ccf49c72a140'
+            materialData: 0
+            # Note: Custom Model Data 1.14.4+ ONLY.
+            customModelData: 0
+            glow: true
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            # Note: How the item shows up in give commands, etc.
+            typeName: '<SOLID:e7a1ff>Revive Beacon [Ghost]'
+         settings:
+            # Note: Amount of time (in seconds) to finish the resurrection process.
+            reviveTime: 300
+            # Note: Amount of times the beacon can be broken before breaking entirely.
+            durability: 1 
+            cooldown: 21600
+            # Note: Whether or not there will be a broadcast when using the revive beacon.
+            silent: true
+         effects:
+            duringResurrection:
+               effect: 'CLOUD'
+               amount: 10
+            onFinish:
+               effect: 'EXPLOSION_LARGE'
+               amount: 5
+         hologram:
+            # Placeholders: {0} = player, {1} = time left, {2} = durability
+            layout:
+            - '<SOLID:e7a1ff>Revive Beacon [Ghost]'
+            - ''
+            - '&8[&c☠&8] <SOLID:ff1c55>{0}'
+            - '&7Resurrecting the dead... &f(<SOLID:ff1c55>{1}&f)'
+            - '<SOLID:ff1c55>⚠ &fDurability left: &4{2} breaks'
+            # Note: Select which lines to update (with placeholders). It is more efficient than updating the whole placeholder.
+            updateLines: [2,3,4] 
+            offset:
+               X: 0.5
+               Y: 2.5
+               Z: 0.5    
+         recipe:
+            enabled: true
+            layout:
+            - '^@-'
+            - '*+*'
+            - '-@^'
+            items:
+               "*":
+                  material: "SOUL_LANTERN"
+               "+":
+                  material: "BEACON"
+               "-":
+                  material: "DIAMOND"
+               "@":
+                  material: "GHAST_TEAR"
+               "^":
+                  material: "HEART_TIER3"   
+                                                                           

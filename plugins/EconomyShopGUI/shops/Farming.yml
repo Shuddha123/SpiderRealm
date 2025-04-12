@@ -1,0 +1,72 @@
+pages:
+  page1:
+    gui-rows: 3
+    items:
+      '1':
+        material: CACTUS
+        buy: -1.0
+        sell: 30.0
+      '2':
+        material: SUGAR_CANE
+        buy: -1.0
+        sell: 50.0
+      '3':
+        material: BAMBOO
+        buy: -1.0
+        sell: 11.0
+      '4':
+        material: WHEAT
+        buy: -1.0
+        sell: 11.0
+      '5':
+        material: POTATO
+        buy: -1.0
+        sell: 22.0
+      '6':
+        material: CARROT
+        buy: -1.0
+        sell: 18.0
+      '7':
+        material: SWEET_BERRIES
+        buy: -1.0
+        sell: 8.0
+      '8':
+        material: GLOW_BERRIES
+        buy: -1.0
+        sell: 9.0
+      '9':
+        material: MELON_SLICE
+        buy: -1.0
+        sell: 3.0
+      '10':
+        material: BONE
+        buy: -1.0
+        sell: 0.1
+      '11':
+        material: ROTTEN_FLESH
+        buy: -1.0
+        sell: 0.05
+      '12':
+        material: COOKED_COD
+        buy: -1.0
+        sell: 3.4
+      '13':
+        material: GOLD_NUGGET
+        buy: -1.0
+        sell: 4.2
+      '14':
+        material: SPIDER_EYE
+        buy: -1.0
+        sell: 1.5
+      '15':
+        material: NETHER_WART
+        buy: 75.0
+        sell: 4.0
+      '16':
+        material: GUNPOWDER
+        buy: -1.0
+        sell: 10.0
+      '17':
+        material: BLAZE_ROD
+        buy: 180.0
+        sell: -1.0

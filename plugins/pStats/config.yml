@@ -1,0 +1,10 @@
+# pStats collects some data for plugin authors like how many servers are using their plugins.
+# To honor their work, you should not disable it.
+# This has nearly no effect on the server performance!
+# Check out https://pstats.devs.beer/ to learn more :)
+
+enabled: true
+serverUuid: f0a2eda5-ee21-4a7d-8a54-13d20eed6cc2
+logFailedRequests: false
+logSentData: false
+logResponseStatusText: false

@@ -1,0 +1,30 @@
+location: world:179.500:250.000:897.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: yellow_Candle !ENCHANTED'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&e&lHeart Crate'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&7Obtain @ /coinshop'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&e◆ &fLeft Click &7to view'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&e◆ &fRight Click &7to open'
+    height: 0.3
+  - content: '&7you have &f%excellentcrates_keys_fire% &7keys'
+    height: 0.3
+  actions: {}

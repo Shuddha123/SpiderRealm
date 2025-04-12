@@ -1,0 +1,68 @@
+open_command: 'dev'
+register_command: true
+size: 36
+menu_title: 'Developer'
+
+
+items:
+
+  'filler':
+    material: BLUE_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-53]
+
+
+
+  'main':
+    material: SUNFLOWER
+    data: 1
+    slot: 31
+    display_name: "&#ffeb14&lsʜᴀʀᴘʏɢᴀᴍᴇʀʏᴛ"
+    lore:
+      - "&8ᴅᴇᴠᴇʟᴏᴘᴇʀ"
+      - ""
+      - ""
+      - "&#ffeb14About!"
+      - "&fʙᴇsᴛ ʜɪɢʜᴇɴᴅ ᴅᴇᴠᴇʟᴏᴘᴇʀ"
+      - "&fᴏᴘᴛɪᴍɪsᴇᴅ ᴄᴏɴғɪɢᴜʀᴀᴛɪᴏɴs & sᴇʀᴠᴇʀ ʙᴜɪʟᴅᴇʀ"
+      - "&fsᴇʀᴠᴇᴅ 30+ sᴇʀᴠᴇʀ"
+      - "&fᴘᴀsᴛ 4 ʏᴇᴀʀs+ ᴇxᴘᴇʀɪᴇɴᴄᴇ"
+ 
+  'chat-colors':
+    material: LIME_DYE
+    data: 1
+    slot: 14
+    display_name: "&#78FF59&lDiscord Server"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&fʙᴇsᴛ sᴇʀᴠᴇʀ ᴅᴇᴠᴇʟᴏᴘɪɴɢ ᴛɪᴘs "
+      - "&fᴀᴄᴛɪᴠᴇ ɢɪᴠᴇᴀᴡᴀʏs ᴀɴᴅ ᴇᴠᴇɴᴛs"
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+
+    click_commands:
+      - '[message] &f▶ Join the Discord server with &#5865F2https://discord.gg/9ajTxSQtA6'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[close]'
+
+  'glow':
+    material: RED_DYE
+    slot: 12
+    display_name: "&#FF6767&lYouTube"
+    enchantments:
+      - DURABILITY;1
+    hide_enchantments: true
+    lore:
+      - ""
+      - "&fᴄʜᴇᴄᴋ ᴏᴜᴛ ᴍʏ ᴄʜᴀɴɴᴇʟ"
+      - "&fᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴜʙsᴄʀɪʙᴇ!"
+      - ""
+      - "&e&l➥ CLICK TO BROWSE"
+    click_commands:
+      - '[message] &f▶ ᴄʜᴇᴄᴋᴏᴜᴛ ᴍʏ ᴄʜᴀɴɴᴇʟ &#5865F2https://www.youtube.com/@sharpygameryt'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[close]'

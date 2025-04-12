@@ -1,0 +1,187 @@
+open_command: ranks
+size: 45
+menu_title: 'Server Ranks'
+
+items:
+
+  'filler':
+    material: RED_STAINED_GLASS_PANE
+    display_name: "&f"
+    data: 1
+    slots: [0-44]
+
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    data: 1
+    slot: 40
+    hide_effects: true
+    display_name: "&cGo Back"
+
+    click_commands:
+      - '[openmenu] coinshop'
+
+  'perks':
+    material: END_CRYSTAL
+    data: 1
+    slot: 13
+    hide_effects: true
+    display_name: "&b&lView Perks"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&7Click here to view rank perks"
+      - ""
+
+    click_commands:
+      - '[openmenu] ranks'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+
+  'vip':
+    material: BOOK
+    data: 1
+    slot: 20
+    display_name: "&#4cfba2&lVIP &fRank"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &61,300 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] lp user %player_name% parent add vip'
+      - '[console] points take %player_name% 1300'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &fVIP Rank&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '1300'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f1,300 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'pro':
+    material: BOOK
+    data: 1
+    slot: 21
+    display_name: "&#ff6863&lPRO &fRank"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &63,800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] lp user %player_name% parent add pro'
+      - '[console] points take %player_name% 3800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &fPro Rank&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '3800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f3,800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'mvp':
+    material: BOOK
+    data: 1
+    slot: 22
+    display_name: "&#0ea6e9&lMVP &fRank"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &68,500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] lp user %player_name% parent add mvp'
+      - '[console] points take %player_name% 8500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &fMVP Rank&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '8500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f8,500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'elite':
+    material: BOOK
+    data: 1
+    slot: 23
+    display_name: "&#eb4899&lELITE &fRank"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &612,500 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] lp user %player_name% parent add elite'
+      - '[console] points take %player_name% 12500'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &fElite Rank&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '12500'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f12,500 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'
+
+  'immortal':
+    material: BOOK
+    data: 1
+    slot: 24
+    display_name: "&#e24fff&lIMMORTAL &fRank"
+    lore:
+      - "&8Coinshop Item"
+      - ""
+      - "&6◈ &fCost: &618,800 Coins"
+      - ""
+      - "&a&l➥ CLICK TO PURCHASE"
+
+    click_commands:
+      - '[console] lp user %player_name% parent add immortal'
+      - '[console] points take %player_name% 18800'
+
+      - '[message] &8&l[&a&l!&8&l] &#7AFE77You successfully bought &fImmortal Rank&#7AFE77!'
+      - '[close]'
+
+    click_requirement:
+      requirements:
+        check_balance:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '18800'
+          deny_commands:
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou don't have enough coins to purchase this item!"
+            - "[message] &8&l[&c&l!&8&l] &#FF7C7CYou need &f18,800 &#FF7C7Cbut you only have &f%playerpoints_points_formatted%&#FF7C7C."
+            - '[close]'

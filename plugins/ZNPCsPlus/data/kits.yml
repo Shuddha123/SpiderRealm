@@ -1,0 +1,25 @@
+id: kits
+is-processed: true
+allow-commands: true
+enabled: true
+uuid: 1cbd43de-5f2a-49de-a1e8-abfebbb3af83
+world: world
+location:
+  x: 195.60258737481084
+  y: 250.0
+  z: 911.2858013829936
+  yaw: -92.70917
+  pitch: 2.8499818
+type: player
+properties:
+  skin_left_leg: 'true'
+  skin_cape: 'true'
+  skin_right_sleeve: 'true'
+  skin_left_sleeve: 'true'
+  skin_right_leg: 'true'
+  skin_hat: 'true'
+  skin_jacket: 'true'
+hologram:
+  lines:
+  - '&#fb0000&lK&#fc0000&lI&#fe0000&lT&#ff0000&lS'
+actions: []

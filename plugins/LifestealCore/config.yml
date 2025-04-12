@@ -1,0 +1,307 @@
+#########################################################################################
+#                                                                                       #
+# LifestealCore, a premium resource by Norska @ https://norska.dev                      #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome                                                 #
+# Support: https://norska.dev/discord/                                                  #
+#                                                                                       #
+# You are editing the config.yml file of LifestealCore.                                 #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# Please consult the wiki for any questions regarding the setup of this plugin, if you  #
+# still require help, open a ticket on my discord server!                               #
+#                                                                                       #
+#########################################################################################
+
+##################################
+#                                #
+#           DATABASE             #
+#                                #
+##################################
+
+# Note: Where to save data for LifestealCore. Choose between "JSON" and "SQLITE".
+# Note: Data does not carry over if you switch methods with existing data.
+save-to: "JSON"
+
+##################################
+#                                #
+#           SETTINGS             #
+#                                #
+##################################   
+
+settings:
+   
+   hearts:
+   
+      drops:
+         # Note: If true, hearts will drop as items and not get directly applied to the killer if all criteria are met.
+         asItem: true
+         
+         # Note: If true, the player will lose hearts when killed by mobs (further down you can set mob-specific heart loss).
+         ifKilledByMob: false
+         
+         # Note: If true, the player will lose hearts when killed by other causes e.g DROWNING, FALL, etc. (further down you can set cause-specific heart loss).
+         ifKilledByOther: false
+         
+         # Note: APPLICABLE FOR MOB OR OTHER DEATHS! Will drop the same amount of hearts lose. If set at false, will only drop 1 heart.
+         respectAmount: false
+         
+         # Note: APPLICABLE FOR MOB OR OTHER DEATHS! Which heart tier to drop if ifKilledByMob or ifKilledByOther is set to true, set to "NONE" to disable heart drops (items) when dying to mobs or other causes.
+         mobAndOtherHeart: "HEART_TIER1"
+         
+         # Note: WILL NOT WORK CORRECTLY IF "asItem" option is enabled. SET TO 0 TO DISABLE.
+         # Example -> If set to 20, players that have 20 or more hearts will not be able to use heart items to gain more, they can only gain more by killing players.
+         redeemThreshold: 0
+
+      # Note: Hearts players will have when first joining the server.
+      starter: 10
+      # Note: Hearts players will have after getting unbanned.
+      unban: 5
+      # Note: Maximum amount of hearts a player can accumulate.
+      maximum: 100
+      
+      # Note: Configure various parameters for heart loss.
+      heartLoss:
+         
+         # Note: Whether or not getting killed by mobs will result in heart loss.
+         mobsEnabled: true
+         # Note: Configure specific mobs to be more punishing (take more hearts). Google for "<Server Version> EntityType Enum". If a mob isn't defined, 1 heart will be lost.
+         mobs:
+            ENDERMAN:
+               hearts: 2
+               
+            BLAZE:
+               hearts: 2  
+         
+         # Note: Whether or not getting killed by other causes will result in heart loss.
+         causesEnabled: true 
+         # Note: Configure specific death causes to be more punishing (take more hearts). Google for "<Server version> DamageCause Enum". If a cause isn't defined, 1 heart will be lost.
+         causes:     
+            DROWNING:
+               hearts: 2       
+      
+         # Note: Configure permission-based heart loss. Makes sense to use only if the default heart loss is more than 1 heart.     
+         # WARNING: THESE WILL ONLY WORK IF MOB OR CAUSE-SPECIFIC DEATHS ARE NOT SET. 
+         permission:
+            default: 1
+            
+            permSpecific:
+               vip:
+                  permission: "lifesteal.vip.heartloss"
+                  value: 3     
+               vipplus:
+                  permission: "lifesteal.vipplus.heartloss"
+                  value: 2       
+               mvp:
+                  permission: "lifesteal.mvp.heartloss"
+                  value: 1     
+         
+                 
+         worldSettings:
+            
+            # Note: Define worlds in which heart loss is disabled. Set list to [] to disable.
+            disabledWorlds:
+               list:
+               - 'world_the_end'                 
+            
+            # Note: Define worlds in which dying means instant elimination. Set list to [] to disable.
+            instantEliminationWorlds:
+               list: []
+            
+   beacons:
+      enabled: true
+      # Note: Command to bind beacon items to players (for resurrection).
+      # Note: Changes to the command require a server restart.
+      bindCommand: "bind"
+      # Note: Whether or not the player will be spawned at the location of the beacon when logging back in after being revived.
+      respawnAtBeacon: true 
+      # Note: Define commands to run for the player when they join after being unbanned. Placeholders: {PLAYER}
+      respawnCommands: 
+      - 'broadcast {PLAYER} has risen from the dead once again!'
+
+   bans:
+      # Note: Whether or not eliminations (reach 0 hearts) results in getting temporarily banned.
+      enabled: true
+      # Note: If bans are set to false, define the minimum amount of hearts the player can reach.
+      minimumHearts: 5
+      # Note: Ban time for when a permission is not found.
+      defaultBanTime: 172800   
+      # Placeholders: {TIME} = ban time      
+      kickMessage:
+      - ''
+      - '<GRADIENT:FF1F00>LifestealCore</GRADIENT:FF06B9>'
+      - ''
+      - '&fYou have been eliminated! &4❌'
+      - '&7Banned from the server for &c{TIME}&7!' 
+      - ''
+      
+      # Placeholders: {TIME} = remaining time     
+      joinWhileBannedMessage:
+      - ''
+      - '<GRADIENT:FF1F00>LifestealCore</GRADIENT:FF06B9>'
+      - ''
+      - '&fYou have been eliminated! &4❌'
+      - '&7Your ban will expire in &c{TIME}&7!' 
+      - ''
+      bantimes:
+         rank1:
+            permission: "lifesteal.time.vip"
+            # Note: 48h -> 172800 seconds
+            value: 172800
+         rank2:
+            permission: "lifesteal.time.vipplus"
+            # Note: 44h -> 158400 seconds
+            value: 158400
+            
+   customBans:
+       # Note: Set to true to override default behavior and execute custom commands upon player elimination.
+       enabled: false
+       # Note: Define what commands are being executed upon player elimination: Placeholders: {PLAYER}
+       commands: 
+       - 'ban {PLAYER} 48h You have been eliminated.'
+     
+   recipes:
+      # Note: Only applicable on 1.9+ servers. Whether or not players will automatically discover recipes for items in items.yml.
+      autoDiscovery: true
+    
+##################################
+#                                #
+#        HOLOGRAM SETTINGS       #
+#                                #
+################################## 
+   
+holograms:
+   # Note: Select from "DecentHolograms".
+   handler: "DecentHolograms"    
+
+##################################
+#                                #
+#         ANTI EXPLOITS          #
+#                                #
+##################################
+
+antiexploits:
+
+   # Note: Do not directly apply or drop hearts if the victim has the same IP as the killer (heart farming with alts).   
+   preventIfOnSameIP: true
+   
+   # Note: Do not drop hearts if a player kills the same person within x seconds defined here. Set to 0 to disable.
+   samePlayerCooldown: 120
+   
+##################################
+#                                #
+#        PLAYER COMMANDS         #
+#                                #
+##################################
+
+playerCommands:
+
+   enabled: true
+   
+   # Note: Changes to the command require a server restart.
+   command: "LIFESTEAL"
+   
+   commands:
+   
+      # Note: Another way to revive players. Players can use this command and sacrifice x of their hearts in order to revive someone.
+      reviveCommand:
+         enabled: false
+         settings:
+            requiredHearts: 10
+            cooldown: 86400
+            
+      # Note: Command for players to check stats of other players (banned, bantime, hearts).
+      checkCommand:
+         enabled: true
+         
+##################################
+#                                #
+#            LOGGER              #
+#                                #
+##################################
+
+# Note: Whether or not to log events to a txt file.
+logger:
+   enabled: true
+   formats:
+      # Note: Name of the files that generate in LifestealCore/logs.
+      file: "dd.MM.yyyy"
+      # Note: Start of the log entry inside each log file.
+      entry: "dd.MM.yyyy @ HH:mm:ss"
+   types:
+      adminAdd: true
+      adminEliminate: true
+      adminGiveItem: true
+      adminRemove: true
+      adminRevive: true
+      adminSet: true
+      adminSetMax: true
+      adminAddMax: true
+      adminRemMax: true
+      adminToggleRevives: true
+      playerCommandRevive: true
+      beaconDamage: true
+      beaconConsume: true
+      deaths: true
+      heartConsume: true
+      effectHeartConsume: true    
+      eliminations: true
+    
+##################################
+#                                #
+#    VALUE DISPLAY SETTINGS      #
+#                                #
+##################################
+
+unboundBeacon: "&7Not bound to any player. (Use &f/bind&7)"    
+
+# Note: Configure how the interval shows up.
+format:
+   seconds: 's'
+   second: 's'
+   minutes: 'm '
+   minute: 'm '
+   hours: 'h '
+   hour: 'h '
+   days: 'D '
+   day: 'D '
+   splitter: 'and '    
+
+# Note: Define custom override for general cause death reasons.
+deathReasonsOverride:
+   FALL_DAMAGE: " falling from heaven"
+   DROWNING: " eaten by fish"
+
+# Note: Define custom override for mob death reasons.
+mobDeathReasonsOverride:
+   ZOMBIE: "Walker"
+   SPIDER: "Spooderman"
+
+##################################
+#                                #
+#             HOOKS              #
+#                                #
+##################################
+      
+hooks:
+
+   worldguard:
+      enabled: true  
+      
+   combatlogx:
+      enabled: true 
+      
+   deluxecombat:
+      enabled: true
+      
+   pvpmanager:
+      enabled: true
+
+      
+updates:
+   notifications: true

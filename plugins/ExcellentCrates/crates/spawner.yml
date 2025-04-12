@@ -1,0 +1,319 @@
+Name: Spawner Crate
+Preview_Config: default
+Permission_Required: false
+Opening:
+  Cooldown: 2
+Key:
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+  Ids:
+  - spawner
+Block:
+  Positions:
+  - 23,-45,62,spawn1
+  - 179,245,909,world
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: false
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: HELIX
+    Particle:
+      Name: FIREWORK
+Milestones:
+  Repeatable: false
+Rewards:
+  List:
+    cow_spawner:
+      Name: '&dCow Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78soa00dmqqbeclhn4ob6egt64r3fcdllupbeehkn8uavchgn8o82008kqobo9pim2sj2f52mst39ehkmaso00o5002aje1gneri4c5q622g00pimst39ehsgg002d5i003bdd5n6aoric5j78ej3dtrg0002006kqqbeado62tre8himoobp0340g002d5i005bdd5n6aoric5j78ejddth5usrgc5rmspbi1400ukrgc5rmsk3fehimst39c5m76000000000g0199n0obndp962rj7ck0080g01l6m2u2je1gneri4clm62u83401004qiclonaqbicli50r31f5in4kj1dpjma00g0800kkrgc5rmsgrfeln780040800ah35dhgni00k004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502dnm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24grfesg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000210004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - 2g0005002j3dtmn0rrecln78soa00dmqqbeclhn4ob6egt64r3fcdllupbeehkn8uavchgn8o82008kqobo9pim2sj2f52mst39ehkmaso00o5002aje1gneri4c5q622g00pimst39ehsgg002d5i003bdd5n6aoric5j78ej3dtrg0002006kqqbeado62tre8himoobp0340g002d5i005bdd5n6aoric5j78ejddth5usrgc5rmspbi1400ukrgc5rmsk3fehimst39c5m76000000000g0199n0obndp962rj7ck0080g01l6m2u2je1gneri4clm62u83401004qiclonaqbicli50r31f5in4kj1dpjma00g0800kkrgc5rmsgrfeln780040800ah35dhgni00k004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502dnm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24grfesg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000210004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    zombie_spawner:
+      Name: '&dZombie Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0001800korfdlo6urj5dpq762g03dmmirj5cdp62pjk79h6orr3ddfmarjkd5q7inr4c5q622g0159n0obndp262t311800cpbeehkn8u880016ip0021mmirj5cdp62pjk79t6urb2d5ig0002008kqobo9pim2sj2f52mst39ehkmaso00o1003add5n56s31etn48pbcc5sg1i080016ip002lmmirj5cdp62pjk79mmuoivedo62treclp0i00fado62trea1nn8pbeehkm2r3j000000000800kkrgc5rmskj1dpjma0040800qjb1f19n0obndp26ar31f41i00g02d96asbld5p6ap2gdhgnipbia9gmspr50080400aado62tre8dnnarjk002040058himoobp00a002002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig17jr49ingt3ic4h3kmrr49h6ur3448t6cobcediio8j3dtm6ush278h6oqb7d1q5us3le9o6op925gh6it31dhkm68hqcpgmosr55gh6uoj6elpm6obkcli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24t35f1q24eh2b9nmqoj9ckg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000510004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - k0001800korfdlo6urj5dpq762g03dmmirj5cdp62pjk79h6orr3ddfmarjkd5q7inr4c5q622g0159n0obndp262t311800cpbeehkn8u880016ip0021mmirj5cdp62pjk79t6urb2d5ig0002008kqobo9pim2sj2f52mst39ehkmaso00o1003add5n56s31etn48pbcc5sg1i080016ip002lmmirj5cdp62pjk79mmuoivedo62treclp0i00fado62trea1nn8pbeehkm2r3j000000000800kkrgc5rmskj1dpjma0040800qjb1f19n0obndp26ar31f41i00g02d96asbld5p6ap2gdhgnipbia9gmspr50080400aado62tre8dnnarjk002040058himoobp00a002002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig17jr49ingt3ic4h3kmrr49h6ur3448t6cobcediio8j3dtm6ush278h6oqb7d1q5us3le9o6op925gh6it31dhkm68hqcpgmosr55gh6uoj6elpm6obkcli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24t35f1q24eh2b9nmqoj9ckg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000510004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    sheep_spawner:
+      Name: '&dSheep Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1801mrb9dpim6sj1cpq3kojcdthmmnr5dpq6it3pbti62t311800ikrgc5rmsh31ehggk006cln78qbkf44000j9cg00urb9dpim6sj1cpq3ksr8clin000008012jb1f176aobic9skarjkd5q6ipbj0030400d9lkmskrgc5rmsh35dhgni06810004qb400amqqbeclhn4ob6egt6qrr2btpn0obndpin42801t9n0obndp86ut35dpq6iobcec000000001002ije1gneriic5n6ep800g1003adc5s56s31etn48pbcc5sg6802009l4pbhelkn4pb4a1m62ub5e9962rj7ck0100g0199n0obndp1mutbeeg0080g00l26ar31f401800800amqqbeclhn4ob6egt66tbjehnmqnrec5mma04tfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq499mgpb5e0g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000610004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1801mrb9dpim6sj1cpq3kojcdthmmnr5dpq6it3pbti62t311800ikrgc5rmsh31ehggk006cln78qbkf44000j9cg00urb9dpim6sj1cpq3ksr8clin000008012jb1f176aobic9skarjkd5q6ipbj0030400d9lkmskrgc5rmsh35dhgni06810004qb400amqqbeclhn4ob6egt6qrr2btpn0obndpin42801t9n0obndp86ut35dpq6iobcec000000001002ije1gneriic5n6ep800g1003adc5s56s31etn48pbcc5sg6802009l4pbhelkn4pb4a1m62ub5e9962rj7ck0100g0199n0obndp1mutbeeg0080g00l26ar31f401800800amqqbeclhn4ob6egt66tbjehnmqnrec5mma04tfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq499mgpb5e0g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000610004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    iron_golem_spawner:
+      Name: '&dIron Golem Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1801mrb9dpim6sj1cpq3kojcdthmmnr5dpq6it3pbti62t311800ikrgc5rmsh31ehggk006cln78qbkf44000j9cg018rb9dpim6sj1cpq3kqbidtn5uprfdhimq00008012jb1f176aobic9skarjkd5q6ipbj0030400d9lkmskrgc5rmsh35dhgni06810004qb400amqqbeclhn4ob6egt6qrr2btpn0obndpin42801t9n0obndp86ut35dpq6iobcec000000001002ije1gneriic5n6ep800g1003adc5s56s31etn48pbcc5sg6802009l4pbhelkn4pb4a1m62ub5e9962rj7ck0100g0199n0obndp1mutbeeg0080g00l26ar31f401800800amqqbeclhn4ob6egt66tbjehnmqnrec5mma052fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq494n4rre413mur35dkg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000310004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1801mrb9dpim6sj1cpq3kojcdthmmnr5dpq6it3pbti62t311800ikrgc5rmsh31ehggk006cln78qbkf44000j9cg018rb9dpim6sj1cpq3kqbidtn5uprfdhimq00008012jb1f176aobic9skarjkd5q6ipbj0030400d9lkmskrgc5rmsh35dhgni06810004qb400amqqbeclhn4ob6egt6qrr2btpn0obndpin42801t9n0obndp86ut35dpq6iobcec000000001002ije1gneriic5n6ep800g1003adc5s56s31etn48pbcc5sg6802009l4pbhelkn4pb4a1m62ub5e9962rj7ck0100g0199n0obndp1mutbeeg0080g00l26ar31f401800800amqqbeclhn4ob6egt66tbjehnmqnrec5mma052fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq494n4rre413mur35dkg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000310004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    husk_spawner:
+      Name: '&dHusk Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgk00rdlkmspb3e9gmct1qc9m6uorbbtimst39ehslup31ehggk009ado62tre8hgn8o8a0036arjkd5q7i20009km800edlkmspb3e9gmct1qd1qn6qo0001004adc5s4spb1e9h7ihbeehkn8qb5ec00c0g01l6mirije1gneri4clm62u80p04000j9cg01arb9dpim6sj1cpq3krbfc9fn6s31etn6asg9007l6s31etn50rrkcln78qb1dhpg00000000400aado62trea9gmspr50020400d9lgngkrgc5rmsh35dhgni0p008016kj5e5qmisj5ch86oobpclp54obectig040200556s31etn46rrldpq00102002k8pbcc5sg05001001arb9dpim6sj1cpq3korledq6uravdpgmqp80jhti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278h4gtbjdcg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000510004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - 50000a00566rrde1nmspbeehpgk00rdlkmspb3e9gmct1qc9m6uorbbtimst39ehslup31ehggk009ado62tre8hgn8o8a0036arjkd5q7i20009km800edlkmspb3e9gmct1qd1qn6qo0001004adc5s4spb1e9h7ihbeehkn8qb5ec00c0g01l6mirije1gneri4clm62u80p04000j9cg01arb9dpim6sj1cpq3krbfc9fn6s31etn6asg9007l6s31etn50rrkcln78qb1dhpg00000000400aado62trea9gmspr50020400d9lgngkrgc5rmsh35dhgni0p008016kj5e5qmisj5ch86oobpclp54obectig040200556s31etn46rrldpq00102002k8pbcc5sg05001001arb9dpim6sj1cpq3korledq6uravdpgmqp80jhti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278h4gtbjdcg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000510004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    enderman_spawner:
+      Name: '&dEnderman Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78soa00dmqqbeclhn4ob6egt64r3fcdllupbeehkn8uavchgn8o8a004l6s31etn48obkc45001j5dpq6it3p10004qb40096qqbeclhn4ob6egt6arj4clp6qobe0000400h9lgngjj5c5p64ua5dpq6it39clpg01g2006kqqbeado62tre8himoobp0340g002d5i005bdd5n6aoric5j78ejddth5usrgc5rmspbi1400ukrgc5rmsk3fehimst39c5m76000000000g0199n0obndp962rj7ck0080g01l6m2u2je1gneri4clm62u83401004qiclonaqbicli50r31f5in4kj1dpjma00g0800kkrgc5rmsgrfeln780040800ah35dhgni00k004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502g7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24hbechin4rb1dog56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000210004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - 2g0005002j3dtmn0rrecln78soa00dmqqbeclhn4ob6egt64r3fcdllupbeehkn8uavchgn8o8a004l6s31etn48obkc45001j5dpq6it3p10004qb40096qqbeclhn4ob6egt6arj4clp6qobe0000400h9lgngjj5c5p64ua5dpq6it39clpg01g2006kqqbeado62tre8himoobp0340g002d5i005bdd5n6aoric5j78ejddth5usrgc5rmspbi1400ukrgc5rmsk3fehimst39c5m76000000000g0199n0obndp962rj7ck0080g01l6m2u2je1gneri4clm62u83401004qiclonaqbicli50r31f5in4kj1dpjma00g0800kkrgc5rmsgrfeln780040800ah35dhgni00k004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502g7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24hbechin4rb1dog56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000210004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    creeper_spawner:
+      Name: '&dCreeper Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec5006rdd5n6aoric5j78ej2dhnm6qqvcln78qbkf5fm8obkc41004adc5s4spb1e9h7ihbeehkn8qb5ec00c2g0159n0obndp262t311800cpbeehkn8u880016ip0025mmirj5cdp62pjk79hn4pb5e1in40000800qjb9dp9n0obndp26ar31f40cg20009km800ldlkmspb3e9gmct1qdlnm4nrje1gnerj5e84g03qje1gnerigdtq6arjkd5gmoso00000000200556s31etn54obectig0102006kqoboado62tre8himoobp0cg0400ja9in2tb9e9im8k3cc5smasiic5n6ep80201002ije1gneri3dtqmst000g1001a4clm62u802g00g00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck09uup2cls78sj148t5mup2c9nmop1279j62r3jckm24orfdhnn48hq49m6ipr8ehfn0tbie1m6a8hc49kn8obcd5hi4ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12edq74qbbclq6gsjfeljmg8hqcpgmosr55gh78pboegh3k8i3e9imas35e8g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000310004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - 180002g019hmurbgdtn6arjkec5006rdd5n6aoric5j78ej2dhnm6qqvcln78qbkf5fm8obkc41004adc5s4spb1e9h7ihbeehkn8qb5ec00c2g0159n0obndp262t311800cpbeehkn8u880016ip0025mmirj5cdp62pjk79hn4pb5e1in40000800qjb9dp9n0obndp26ar31f40cg20009km800ldlkmspb3e9gmct1qdlnm4nrje1gnerj5e84g03qje1gnerigdtq6arjkd5gmoso00000000200556s31etn54obectig0102006kqoboado62tre8himoobp0cg0400ja9in2tb9e9im8k3cc5smasiic5n6ep80201002ije1gneri3dtqmst000g1001a4clm62u802g00g00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck09uup2cls78sj148t5mup2c9nmop1279j62r3jckm24orfdhnn48hq49m6ipr8ehfn0tbie1m6a8hc49kn8obcd5hi4ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12edq74qbbclq6gsjfeljmg8hqcpgmosr55gh78pboegh3k8i3e9imas35e8g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000310004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    blaze_spawner:
+      Name: '&dBlaze Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1801mrb9dpim6sj1cpq3kojcdthmmnr5dpq6it3pbti62t311800ikrgc5rmsh31ehggk006cln78qbkf44000j9cg00urb9dpim6sj1cpq3kojcc5t6a00008012jb1f176aobic9skarjkd5q6ipbj0030400d9lkmskrgc5rmsh35dhgni06810004qb400amqqbeclhn4ob6egt6qrr2btpn0obndpin42801t9n0obndp86ut35dpq6iobcec000000001002ije1gneriic5n6ep800g1003adc5s56s31etn48pbcc5sg6802009l4pbhelkn4pb4a1m62ub5e9962rj7ck0100g0199n0obndp1mutbeeg0080g00l26ar31f401800800amqqbeclhn4ob6egt66tbjehnmqnrec5mma04tfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq4916oobqckg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000310004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1801mrb9dpim6sj1cpq3kojcdthmmnr5dpq6it3pbti62t311800ikrgc5rmsh31ehggk006cln78qbkf44000j9cg00urb9dpim6sj1cpq3kojcc5t6a00008012jb1f176aobic9skarjkd5q6ipbj0030400d9lkmskrgc5rmsh35dhgni06810004qb400amqqbeclhn4ob6egt6qrr2btpn0obndpin42801t9n0obndp86ut35dpq6iobcec000000001002ije1gneriic5n6ep800g1003adc5s56s31etn48pbcc5sg6802009l4pbhelkn4pb4a1m62ub5e9962rj7ck0100g0199n0obndp1mutbeeg0080g00l26ar31f401800800amqqbeclhn4ob6egt66tbjehnmqnrec5mma04tfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq4916oobqckg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000310004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    pig_spawner:
+      Name: '&dPig Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78soa00dmqqbeclhn4ob6egt64r3fcdllupbeehkn8uavchgn8o8a004l6s31etn48obkc45001j5dpq6it3p10004qb4006mqqbeclhn4ob6egt70qb70000400h9lgngjj5c5p64ua5dpq6it39clpg01g2006kqqbeado62tre8himoobp0340g002d5i005bdd5n6aoric5j78ejddth5usrgc5rmspbi1400ukrgc5rmsk3fehimst39c5m76000000000g0199n0obndp962rj7ck0080g01l6m2u2je1gneri4clm62u83401004qiclonaqbicli50r31f5in4kj1dpjma00g0800kkrgc5rmsgrfeln780040800ah35dhgni00k004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502dnm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24k39csg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000410004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - 2g0005002j3dtmn0rrecln78soa00dmqqbeclhn4ob6egt64r3fcdllupbeehkn8uavchgn8o8a004l6s31etn48obkc45001j5dpq6it3p10004qb4006mqqbeclhn4ob6egt70qb70000400h9lgngjj5c5p64ua5dpq6it39clpg01g2006kqqbeado62tre8himoobp0340g002d5i005bdd5n6aoric5j78ejddth5usrgc5rmspbi1400ukrgc5rmsk3fehimst39c5m76000000000g0199n0obndp962rj7ck0080g01l6m2u2je1gneri4clm62u83401004qiclonaqbicli50r31f5in4kj1dpjma00g0800kkrgc5rmsgrfeln780040800ah35dhgni00k004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502dnm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24k39csg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000410004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    vindicator_spawner:
+      Name: '&dVindicator Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1801mrb9dpim6sj1cpq3kojcdthmmnr5dpq6it3pbti62t311800ikrgc5rmsh31ehggk006cln78qbkf44000j9cg018rb9dpim6sj1cpq3ktj9dpi6ior1ehnn400008012jb1f176aobic9skarjkd5q6ipbj0030400d9lkmskrgc5rmsh35dhgni06810004qb400amqqbeclhn4ob6egt6qrr2btpn0obndpin42801t9n0obndp86ut35dpq6iobcec000000001002ije1gneriic5n6ep800g1003adc5s56s31etn48pbcc5sg6802009l4pbhelkn4pb4a1m62ub5e9962rj7ck0100g0199n0obndp1mutbeeg0080g00l26ar31f401800800amqqbeclhn4ob6egt66tbjehnmqnrec5mma052fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq49b6irj4d5hm2t3fe8g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000210004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1801mrb9dpim6sj1cpq3kojcdthmmnr5dpq6it3pbti62t311800ikrgc5rmsh31ehggk006cln78qbkf44000j9cg018rb9dpim6sj1cpq3ktj9dpi6ior1ehnn400008012jb1f176aobic9skarjkd5q6ipbj0030400d9lkmskrgc5rmsh35dhgni06810004qb400amqqbeclhn4ob6egt6qrr2btpn0obndpin42801t9n0obndp86ut35dpq6iobcec000000001002ije1gneriic5n6ep800g1003adc5s56s31etn48pbcc5sg6802009l4pbhelkn4pb4a1m62ub5e9962rj7ck0100g0199n0obndp1mutbeeg0080g00l26ar31f401800800amqqbeclhn4ob6egt66tbjehnmqnrec5mma052fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq49b6irj4d5hm2t3fe8g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000210004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    drowned_spawner:
+      Name: '&dDrowned Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec5006rdd5n6aoric5j78ej2dhnm6qqvcln78qbkf5fm8obkc45002aje1gneri4c5q622g00pimst39ehsgg002d5i004bdd5n6aoric5j78ej4e9nnerj5cg0000g0256m2u2eclgn4ojp8ln78qbkd5in60060800qjb9dp9n0obndp26ar31f40cg20009km800ldlkmspb3e9gmct1qdlnm4nrje1gnerj5e84g03qje1gnerigdtq6arjkd5gmoso00000000200556s31etn54obectig0102006kqoboado62tre8himoobp0cg0400ja9in2tb9e9im8k3cc5smasiic5n6ep80201002ije1gneri3dtqmst000g1001a4clm62u802g00g00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck09uup2cls78sj148t5mup2c9nmop1279j62r3jckm24orfdhnn48hq49m6ipr8ehfn0tbie1m6a8hc49kn8obcd5hi4ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12edq74qbbclq6gsjfeljmg8hqcpgmosr55gh78pboegh3k8i4e9nnerj5cgg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000510004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - 180002g019hmurbgdtn6arjkec5006rdd5n6aoric5j78ej2dhnm6qqvcln78qbkf5fm8obkc45002aje1gneri4c5q622g00pimst39ehsgg002d5i004bdd5n6aoric5j78ej4e9nnerj5cg0000g0256m2u2eclgn4ojp8ln78qbkd5in60060800qjb9dp9n0obndp26ar31f40cg20009km800ldlkmspb3e9gmct1qdlnm4nrje1gnerj5e84g03qje1gnerigdtq6arjkd5gmoso00000000200556s31etn54obectig0102006kqoboado62tre8himoobp0cg0400ja9in2tb9e9im8k3cc5smasiic5n6ep80201002ije1gneri3dtqmst000g1001a4clm62u802g00g00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck09uup2cls78sj148t5mup2c9nmop1279j62r3jckm24orfdhnn48hq49m6ipr8ehfn0tbie1m6a8hc49kn8obcd5hi4ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12edq74qbbclq6gsjfeljmg8hqcpgmosr55gh78pboegh3k8i4e9nnerj5cgg56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000510004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    tropical_fish_spawner:
+      Name: '&dTropical Fish Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78soa00dmqqbeclhn4ob6egt64r3fcdllupbeehkn8uavchgn8o8a004l6s31etn48obkc45001j5dpq6it3p10004qb400bmqqbeclhn4ob6egt78sjfe1km6obcbtj6isr80000400h9lgngjj5c5p64ua5dpq6it39clpg01g2006kqqbeado62tre8himoobp0340g002d5i005bdd5n6aoric5j78ejddth5usrgc5rmspbi1400ukrgc5rmsk3fehimst39c5m76000000000g0199n0obndp962rj7ck0080g01l6m2u2je1gneri4clm62u83401004qiclonaqbicli50r31f5in4kj1dpjma00g0800kkrgc5rmsgrfeln780040800ah35dhgni00k004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502inm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24l3idto6ior1dgg4cqbjd0g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000310004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - 2g0005002j3dtmn0rrecln78soa00dmqqbeclhn4ob6egt64r3fcdllupbeehkn8uavchgn8o8a004l6s31etn48obkc45001j5dpq6it3p10004qb400bmqqbeclhn4ob6egt78sjfe1km6obcbtj6isr80000400h9lgngjj5c5p64ua5dpq6it39clpg01g2006kqqbeado62tre8himoobp0340g002d5i005bdd5n6aoric5j78ejddth5usrgc5rmspbi1400ukrgc5rmsk3fehimst39c5m76000000000g0199n0obndp962rj7ck0080g01l6m2u2je1gneri4clm62u83401004qiclonaqbicli50r31f5in4kj1dpjma00g0800kkrgc5rmsgrfeln780040800ah35dhgni00k004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502inm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24l3idto6ior1dgg4cqbjd0g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000310004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+    spider_spawner:
+      Name: '&dSpider Spawner'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0001800korfdlo6urj5dpq762g03dmmirj5cdp62pjk79h6orr3ddfmarjkd5q7inr4c5q622g0159n0obndp262t311800cpbeehkn8u880016ip0021mmirj5cdp62pjk79pn0qb4clp00002008kqobo9pim2sj2f52mst39ehkmaso00o1003add5n56s31etn48pbcc5sg1i080016ip002lmmirj5cdp62pjk79mmuoivedo62treclp0i00fado62trea1nn8pbeehkm2r3j000000000800kkrgc5rmskj1dpjma0040800qjb1f19n0obndp26ar31f41i00g02d96asbld5p6ap2gdhgnipbia9gmspr50080400aado62tre8dnnarjk002040058himoobp00a002002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig17jr49ingt3ic4h3kmrr49h6ur3448t6cobcediio8j3dtm6ush278h6oqb7d1q5us3le9o6op925gh6it31dhkm68hqcpgmosr55gh6uoj6elpm6obkcli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24t35f1q24eh2ado6ip35e8g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000410004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Commands: []
+      Items:
+      - k0001800korfdlo6urj5dpq762g03dmmirj5cdp62pjk79h6orr3ddfmarjkd5q7inr4c5q622g0159n0obndp262t311800cpbeehkn8u880016ip0021mmirj5cdp62pjk79pn0qb4clp00002008kqobo9pim2sj2f52mst39ehkmaso00o1003add5n56s31etn48pbcc5sg1i080016ip002lmmirj5cdp62pjk79mmuoivedo62treclp0i00fado62trea1nn8pbeehkm2r3j000000000800kkrgc5rmskj1dpjma0040800qjb1f19n0obndp26ar31f41i00g02d96asbld5p6ap2gdhgnipbia9gmspr50080400aado62tre8dnnarjk002040058himoobp00a002002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig17jr49ingt3ic4h3kmrr49h6ur3448t6cobcediio8j3dtm6ush278h6oqb7d1q5us3le9o6op925gh6it31dhkm68hqcpgmosr55gh6uoj6elpm6obkcli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24t35f1q24eh2ado6ip35e8g56s31etn6ash25gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ug00o00lhmutbeeg00000410004qb4008mqqbeclhn4ob6egt76s31etn6asg0
+      Ignored_For_Permissions: []
+Animation_Config: chests_mini
+Last_Opener: ROTHEST_HT1
+Last_Reward: Obsidian
+Item:
+  Material: BLACK_SHULKER_BOX

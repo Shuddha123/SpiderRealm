@@ -1,0 +1,42 @@
+# DeluxeMenus 1.14.0-Release main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: HIGHEST
+check_updates: true
+gui_menus:
+  warps:
+    file: warps.yml
+  tags_menu:
+    file: tags_menu.yml
+  playtime:
+    file: playtime.yml
+  playtime2:
+    file: playtime2.yml
+  playtime3:
+    file: playtime3.yml
+  rtp:
+    file: rtp.yml
+  kits:
+    file: kits.yml
+  
+  spawners:
+    file: spawners.yml
+  discord:
+    file: discord.yml
+  dev:
+    file: dev.yml
+  
+  coinshop:
+    file: coinshop.yml
+  coinshop-cratekeys:
+    file: coinshop-cratekeys.yml
+  coinshop-playertags:
+    file: coinshop-playertags.yml
+  coinshop-chatcolors:
+    file: coinshop-chatcolors.yml
+  coinshop-ranks:
+    file: coinshop-ranks.yml
+  coinshop-glows:
+    file: coinshop-glows.yml

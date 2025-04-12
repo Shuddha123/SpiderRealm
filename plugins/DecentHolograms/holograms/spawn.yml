@@ -1,0 +1,28 @@
+location: world:212.511:253.000:903.483
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6&lSPIDER REALM'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fWelcome to SPIDER REALM, &e%player_name%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fStart your journey using &e/rtp &fand'
+    height: 0.3
+  - content: '&freceive help through the &e/help &fmenu!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&6&lJOIN OUR DISCORD COMMUNITY!'
+    height: 0.3
+  - content: '&eᴅɪsᴄᴏʀᴅ.ɢɢ/ꜰɪʀᴇᴍᴄ'
+    height: 0.3
+  actions: {}

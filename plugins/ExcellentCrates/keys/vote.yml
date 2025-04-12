@@ -1,0 +1,7 @@
+Name: '#b3ff5dVote Key'
+Virtual: false
+Item:
+  Material: LIME_CANDLE
+  Name: '&a&lVOTE KEY'
+  Enchants:
+    mending: 1

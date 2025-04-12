@@ -1,0 +1,30 @@
+location: world:182.500:250.000:906.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: Lime_Candle !ENCHANTED'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&a&lVOTE CRATE'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&7Obtain @ /coinshop'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&a◆ &fLeft Click &7to view'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&a◆ &fRight Click &7to open'
+    height: 0.3
+  - content: '&7you have &f%excellentcrates_keys_vote% &7keys'
+    height: 0.3
+  actions: {}
